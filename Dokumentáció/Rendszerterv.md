@@ -2,6 +2,11 @@
 
 ## A rendszer célja
 
+- A rendszer célja a recepciósok munkájának könnyítése
+- A program egy web alapú felületen fut, ami egy adatbázishoz van kapcsolva
+- Navigációs menün keresztül lehet egyes pontokba eljutni a rendszerben
+- A program célja, hogy könnyen lehessen tájékozódni a felületen
+
 ## Projektterv
 
 ## Rendszerterv Üzleti folyamatok modellje
