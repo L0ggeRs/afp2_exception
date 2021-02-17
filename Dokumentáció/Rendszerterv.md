@@ -18,4 +18,6 @@
 10. Implementációs terv
 11. Tesztterv
 12. Telepítési terv
+ - A rendszer beüzemelésekor ajánlott egy hozzá szakértő emberre bízni a beüzemelést mivel a szerver elindításához szükség van némi hozzáértéshez.
+	Így elkerülve esetleges nem kívánatos hibák létre jöttét.
 13. Karbantartási terv
