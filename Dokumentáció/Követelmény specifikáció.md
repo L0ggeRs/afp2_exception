@@ -1,3 +1,5 @@
+# Követelmény specifikáció
+
 ## Áttekintés
 
 ## Jelenlegi helyzet
@@ -25,6 +27,8 @@
  - A papír alapú könyvelés is növeli a hibázás kockázatát, nehezebben is javítható.
 
 ## Igényelt üzleti folyamatok
+
+- A megrendelő kérésére a recepciós lekérheti az ügyfelek adatait, megkönnyítve ezzel a recepciós munkáját.
 
 ## Követelménylista
 
