@@ -14,3 +14,5 @@
 8. Követelménylista
 9. Riportok
 10. Fogalomtár
+ - Cella: egy kisebb terület, melyen meg tudnak szállni a vendégek lakókocsival vagy sátorral
+ - Számla: Olyan számadási bizonylat, amelyet ezen szolgáltatás teljesítésekor állítanak ki
