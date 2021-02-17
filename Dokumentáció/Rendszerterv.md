@@ -1,7 +1,13 @@
-1. A rendszer célja
-2. Projektterv
-3. Üzleti folyamatok modellje
-4. Követelmények
+# Rendszerterv
+
+## A rendszer célja
+
+## Projektterv
+
+## Rendszerterv Üzleti folyamatok modellje
+
+## Követelmények
+
  - Funkcionális
 	- Webes környezetben való működés
 	- A foglalások és az ehhez tartozó adatok tárolása
@@ -10,14 +16,22 @@
 	- Egyszerű, egyértelmű kezelés
  - Törvényi előírások, szabványok
 	- GDPR követelményeinek való megfelelés
-5. Funkcionális terv
-6. Fizikai környezet
-7. Absztrakt domain modell
-8. Architekturális terv
-9. Adatbázis terv
-10. Implementációs terv
-11. Tesztterv
-12. Telepítési terv
+## Funkcionális terv
+
+## Fizikai környezet
+
+## Absztrakt domain modell
+
+## Architekturális terv
+
+## Adatbázis terv
+
+## Implementációs terv
+
+## Tesztterv
+
+## Telepítési terv
+
  - A rendszer beüzemelésekor ajánlott egy hozzá szakértő emberre bízni a beüzemelést mivel a szerver elindításához szükség van némi hozzáértéshez.
 	Így elkerülve esetleges nem kívánatos hibák létre jöttét.
-13. Karbantartási terv
+## Karbantartási terv
