@@ -23,6 +23,19 @@
 	- GDPR követelményeinek való megfelelés
 ## Funkcionális terv
 
+- Rendszerszereplők
+  - Recepciós
+  
+- Rendszerhasználati esetek és lefutásaik:
+  - Recepciós
+    * Adatok megtekintése
+    * Adatok hozzáadása, törlése, módosítása
+    * A rendszerhez való teljes hozzáférés
+
+- Menü hierarchiák
+  - Kezdőlap
+    * Foglalások
+    * Számlák
 ## Fizikai környezet
 
 ## Absztrakt domain modell
