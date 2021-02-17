@@ -34,6 +34,11 @@
  - 
 ## Használati esetek
 
+A kemping recepciósa kezeli a rendszert, ami azt jelenti, hogy a használati esetek többsége hozzá kapcsolódik.
+
+Adatbázisban lévő adatok kezelése:
+- Adatok hozzáadása, törlése, módosítása.
+
 ## Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 
 ## Képernyő tervek
