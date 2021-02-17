@@ -19,5 +19,11 @@
 7. Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 8. Képernyő tervek
 9. Forgatókönyv
+ - Egy webes felületet fogunk létrehozni, melyhez tartozni fog egy adatnázis, melyben a foglalásokat fogjuk kezelni.
+ - A térképen fogjuk látni a férőhelyek elhelyezkedését a megadott intervallumon belül. 2 féle színnel lesznek jelölve a számozott férőhelyek, zöld és piros. 
+	A zölddel jelölt parcellák lesznek a szabadok, míg a pirossal jelöltek a foglaltak.
+ - Regisztrálni tudunk majd vendégeket. A névre, email címre, személyi számra, telefonszámra és a lakcímre lesz szükség a regisztrációhoz.
+ - A megadott szám és a szín függvényében tudjuk lefoglalni az adott parcellát. Ilyenkor fogjuk tudni eldönteni, hogy sátorral vagy lakókocsival szeretnénk megszállni.
+	Az intervallum és a megfelelő email cím megadása után tudjuk lefoglalni az adott parcellát.
 10. Funkció-követelmény megfeleltetés
 11. Fogalomszótár
