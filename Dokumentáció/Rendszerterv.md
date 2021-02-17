@@ -46,6 +46,9 @@
 
 ## Adatbázis terv
 
+A kemping szolgáltatáshoz készült az adatbázis, ennek a tervét mutatja a mellékelt ábra.  
+![Adatbázisterv a foglalásokhoz](https://github.com/L0ggeRs/afp2_exception/blob/master/Dokumentáció/database_model.png)
+
 ## Implementációs terv
 
 ## Tesztterv
