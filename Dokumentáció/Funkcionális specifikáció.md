@@ -5,7 +5,21 @@
  - A foglalás történhet sátorral vagy lakókocsival, akár egy vagy több éjszakára is.
  - Az aktuális foglalások kilistázására is lesz lehetőség. A rendszer ez alapján fogja kiszámolni az aktuális foglaláshoz tartozó költségeket.
  - A weboldal tartalmazni fog képeket, elérhetőségeket és az ehhez szükséges információkat.
-2. Jelenlegi helyzet
+ 
+## Jelenlegi helyzet
+
+- Ennek a fejezetnek a feladata kifejteni, hogy miért van
+  szükség az alkalmazásunkra. Érdemes minél lényegretörőbbnek
+  lenni benne, minél több pontban ecsetelve a szükséget.
+  
+- A mai világban már elengedhetetlen, hogy szoftveresen is vezetve legyenek az adminisztrációs dolgok. Ezért szükség van egy olyan szoftverre, ami segít könnyebben tájékozódni a foglalások, pénzösszegek és a vevő igényei között. Ezáltal visszakövethetőbbé is teszi ezt.
+
+- A jelenlegi helyzet, hogy papíron, jegyzetben van vezetve, ami nagyon lassú ahhoz, hogy a vevők igényei ki legyenek elégítve. Ezt pedig nehéz úgy kivitelezni, hogy az alkalmazottaknak kevesebb idejük marad más teendőkre.
+
+- Muszáj a pénzösszegek kezelését is egyszerűbbé tenni. Jelenlegi formában ez nehéz, és nehezen nyomon követhető.
+
+-Sok időt vesz igénybe a dokumentumok, papírok karbantartása, tárolása. Nem egyszerű több évre visszamenőleg keresni.
+  
 3. Követelménylista
 4. Jelenlegi üzleti folyamatok modellje
 5. Igényelt üzleti folyamatok modellje
