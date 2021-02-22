@@ -48,7 +48,7 @@ Adatbázisban lévő adatok kezelése:
 - Adatok hozzáadása, törlése, módosítása.
 
 ## Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
-
+A recepciós feladatkör ellátja az adminisztrátor feladatát. A vendég nincsen közvetlen kapcsolatban a rendszerünk, de közvetett módon a recepciós által kerül kapcsolatba a rendszerrel. A weboldal megnyitásakor megnyílik a főoldalunk, ahol található a navigációs menü pont, ahol a kezelő kitudja választani a tetszőleges intervallumot, ami szerint megjelenítődnek az adott intervallumon lefoglalt és szabad férőhelyek.  Egy cellára kattintva elő hozhatjuk a cella adatait, ahol megtalálhatjuk a lefoglal gombot amely egy újabb formra irányít minket ahol letudjuk foglalni az adott slotot. De található még egy Foglalások menü pont is a főoldalon, ahol a foglalásokat tudjuk ki listázni és számlát készíteni.
 ## Képernyő tervek
 
 ## Forgatókönyv
