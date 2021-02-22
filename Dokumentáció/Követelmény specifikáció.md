@@ -1,7 +1,10 @@
 # Követelmény specifikáció
 
 ## Áttekintés
-
+A fejlesztés célja egy vizuálisan részletes, és átlátható web alkalmazás készítése, amely képes nyílvántartani egy kemping foglalásait, és megjeleníteni parcelláinak állapotát.
+A rendszer az egyszerűségre alapoz ,hogy minél könnyebben és egyszerűbben megtanulható és átláthatóbb legyen a recepciós számára.
+Az alkalmazást csak a kemping recepciósa kezeli. A cellákat egy vagy több éjszakára is le lehet foglani. Dönteni lehet hogy sátras vagy lakókocsis. Minden cellához kérhető akár áram is. Ki lehet listázni az aktuális ffoglalásokat minden adaatukkal együtt.
+A távozás előtt a fizetéskor a rendszer egy számlát állít ki, amit ki lehet nyomtatni.
 ## Jelenlegi helyzet
 
  - A kempingnek szüksége van egy könnyen kezelhető és átfogó rendszerre a mostani papír alapú megoldások helyett.
@@ -19,6 +22,16 @@
 ## Funkcionális követelmények
 
 ## Rendszerre vonatkozó törvények szabványok, ajánlások
+>   1999. évi L XXVI. törvény a szerzői jogról 210/2009. (IX. 29.) Korm. rendelet a kereskedelmi tevékenységek végzésének feltételeiről
+AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) A természetes személyeknek a személyes adatok kezelése tekintetében történő védelméről és az ilyen adatok szabad áramlásáról, valamint a 95/46/EK rendelet hatályon kívül helyezéséről (általános adatvédelmi rendelet) AZ EURÓPAI PARLAMENT ÉS A TANÁCS (EU) 2016/679 RENDELETE (2016. április 27.)
+
+>  1997. évi CLV. törvény a fogyasztó védelemről
+
+>  2001. évi CVIII. törvény – az elektronikus kereskedelmi szolgáltatások, valamint az információs társadalommal összefüggő szolgáltatások egyes kérdéseiről (főképp a 13/A. §-a)
+
+>  2011. évi CXII. törvény – az információs önrendelkezési jogról és az információszabadságról (a továbbiakban: Infotv.)
+>  
+>  2016. évi XCIII. törvény a szerzői jogok és a szerzői joghoz kapcsolódó jogok közös kezeléséről
 
 ## Jelenlegi üzleti folyamatok modellje
 
