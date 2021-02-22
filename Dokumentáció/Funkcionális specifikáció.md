@@ -63,7 +63,8 @@ A recepciós felhasználói felülete egy térkép a kempingről, amelyen tábl�
 - Szürke - a cella legalább egy éjszakára le van foglalva az adott intervallumon belül.
 A cellára kattintva megjelenik az adott cella információt tartalmazó ablak
 Számla kiállítást a "Foglalások" menüpontból lehet indítani.
-**Navigációs menü:**
+
+Navigációs menü:
 Kezdőlap: térkép + idő-intervallum beállítás
 Foglalás: űrlap egy cella lefoglalásához
 Foglalások: táblázat a jelenleg rendszerben lévő foglalásokkal
