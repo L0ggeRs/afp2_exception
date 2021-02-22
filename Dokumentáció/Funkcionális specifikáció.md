@@ -20,6 +20,14 @@
 - Muszáj a pénzösszegek kezelését is egyszerűbbé tenni. Jelenlegi formában ez nehéz, és nehezen nyomon követhető. Sok időt vesz igénybe a dokumentumok, papírok karbantartása, tárolása. Nem egyszerű több évre visszamenőleg keresni.
   
 ## Követelménylista
+| modul | id | név | verzió | kifejtés |
+|--|--|--|--|--|
+| funkció | F1  | Foglalás | 1.0 |Az adott cellára kattintva elő hívjuk a cella adatait, amely tartalmazza a lefoglalni kívánt kemping hely adatait és ha ez a hely szabad akkor a lefoglal gomb lenyomásával elő tudjuk hívni a foglalás formot. Ahol az a adatok kitöltésével letudunk foglalni egy kemping helyet.
+|funkció| F2| Kemping helyek lekérdezése | 1.0 | Ez a fő form, ahol láthatjuk a kiválasztott intervallumban éppen szabad helyeket vagy már lefoglalt helyeket.
+|funkció|F3| Adatok lekérdezése | 1.0 | Itt tudjuk lekérni a cellák adatait (Rá kattintva a cellára).
+|Funkció|F4| Számlázás | 1.0 |Számla kiállítást az adott foglaláshoz a "Foglalások" menüpontban, vagy a cella információk ablakból lehet indítani. 
+|Menü|M1|Kemping helyek megjelenítése| 1.0| A lefoglalt slotokat jeleníti meg különböző színekkel. Itt tudjuk meg kezdeni a lefoglalást.
+|Menü| M2 | Foglalások megjelenítése | 1.0 | A lefoglalt kemping helyek adatait jeleníti meg táblázatosan.
 
 ## Jelenlegi üzleti folyamatok modellje
 
