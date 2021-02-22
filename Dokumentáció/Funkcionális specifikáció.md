@@ -67,7 +67,9 @@ Számla kiállítást a "Foglalások" menüpontból lehet indítani.
 Navigációs menü:
 
 Kezdőlap: térkép + idő-intervallum beállítás.
+
 Foglalás: űrlap egy cella lefoglalásához.
+
 Foglalások: táblázat a jelenleg rendszerben lévő foglalásokkal.
 - Megjelenik egy táblázat az összes rendszerben lévő foglalás adataival. A sorok végén "Módosítás", "Törlés", és "Számla" lehetőséggel.
 - Módosítás form: Automatikusan kitölti a mezőket a módosítandó foglalás adataival. Az mezők alatt két gomb van: "Mentés" és "Mégsem".
