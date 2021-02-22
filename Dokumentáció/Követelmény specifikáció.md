@@ -17,7 +17,12 @@
 - A rendszer a pénzkezelést és a foglalások követhetőségét sokkal egyszerűbbé teszi. 
 - Ki lehet listázni a foglalásokat és a hozzájuk tartozó információkat.
 ## Funkcionális követelmények
+ A recepciós, mint felhasználó lehetőségei:
 
+-   Lekérdezheti a szabad férőhelyeket egy adott időközre a vendég kérése szerint.
+-   Betáplálhatja a rendszerbe a kérést miszerint a vendég sátorral, vagy karavánkocsival szeretne a kempingbe tartózkodni, szüksége van-e áramra, illetve mettől meddig marad a kempingben.
+-   Le tudja foglalni a vendég számára a megfelelő helyet.
+-   Számlát tud előállítani
 ## Rendszerre vonatkozó törvények szabványok, ajánlások
 
 ## Jelenlegi üzleti folyamatok modellje
