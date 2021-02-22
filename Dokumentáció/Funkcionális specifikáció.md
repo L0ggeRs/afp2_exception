@@ -63,4 +63,6 @@ Adatbázisban lévő adatok kezelése:
 ## Funkció-követelmény megfeleltetés
 
 ## Fogalomszótár
+ slot - Kemping hely
+
 
