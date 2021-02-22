@@ -30,7 +30,14 @@
 |Menü| M2 | Foglalások megjelenítése | 1.0 | A lefoglalt kemping helyek adatait jeleníti meg táblázatosan.
 
 ## Jelenlegi üzleti folyamatok modellje
-
+ Sok kemping a hagyományos, papír alapú módszert használja a foglalások számontartásához. A recepciós a foglalási adatokat egy jegyzőkönyvbe/naptárba rögzíti.
+ Ennek számos hátránya van:
+ - Lassan és nehezen átlátható rendszer
+ - Vendégek adatai összekeveredhetnek
+ - Hiba kockázat az adatok feljegyzésekor
+ - Az egész dokumentáció elveszhet
+ - Számla kiállítása körülményes
+ - Nem környezetbarát módszer
 ## Igényelt üzleti folyamatok modellje
 
  - Weboldalunk célja, hogy leegyszerűsítsük egy kemping foglalását és foglalásainak kezelését a papír alapú munkához képest. Csökken a hibalehetőségek száma is.
@@ -49,7 +56,23 @@ Adatbázisban lévő adatok kezelése:
 
 ## Megfeleltetés, hogyan fedik le a használati esetek a követelményeket
 A recepciós feladatkör ellátja az adminisztrátor feladatát. A vendég nincsen közvetlen kapcsolatban a rendszerünk, de közvetett módon a recepciós által kerül kapcsolatba a rendszerrel. A weboldal megnyitásakor megnyílik a főoldalunk, ahol található a navigációs menü pont, ahol a kezelő kitudja választani a tetszőleges intervallumot, ami szerint megjelenítődnek az adott intervallumon lefoglalt és szabad férőhelyek.  Egy cellára kattintva elő hozhatjuk a cella adatait, ahol megtalálhatjuk a lefoglal gombot amely egy újabb formra irányít minket ahol letudjuk foglalni az adott slotot. De található még egy Foglalások menü pont is a főoldalon, ahol a foglalásokat tudjuk ki listázni és számlát készíteni.
+
 ## Képernyő tervek
+A recepciós felhasználói felülete egy térkép a kempingről, amelyen táblázat szerűen vannak jelölve kemping különböző parcellái. A táblázat cellái egy-egy kiadható kemping helyet jelölnek. A cellákat egy, vagy több éjszakára lehet lefoglalni. A foglalás két féle típusú lehet, sátras vagy lakókocsis. Minden parcellához kérhető áram csatlakozás. A cellák színezése a parcella állapotától függ:
+- Zöld - a cella nincs lefoglalva egy éjszakára sem az adott intervallumon belül.
+- Szürke - a cella legalább egy éjszakára le van foglalva az adott intervallumon belül.
+A cellára kattintva megjelenik az adott cella információt tartalmazó ablak
+Számla kiállítást a "Foglalások" menüpontból lehet indítani.
+
+Navigációs menü:
+
+Kezdőlap: térkép + idő-intervallum beállítás.
+
+Foglalás: űrlap egy cella lefoglalásához.
+
+Foglalások: táblázat a jelenleg rendszerben lévő foglalásokkal.
+- Megjelenik egy táblázat az összes rendszerben lévő foglalás adataival. A sorok végén "Módosítás", "Törlés", és "Számla" lehetőséggel.
+- Módosítás form: Automatikusan kitölti a mezőket a módosítandó foglalás adataival. Az mezők alatt két gomb van: "Mentés" és "Mégsem".
 
 ## Forgatókönyv
 
