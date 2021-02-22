@@ -49,7 +49,11 @@ AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) 
 - A megrendelő kérésére a recepciós lekérheti az ügyfelek adatait, megkönnyítve ezzel a recepciós munkáját.
 
 ## Követelménylista
-
+| követelménysorszám| követelmény megnevezése| Követelményekről bővebben 
+|--|--|--|--|--|
+|K00| Férőhelyek lekérdezése | Egy adott intervallumban lekérdezheti a férőhelyek állapotát amelyet egy térképen jelenít meg zöld színnel ha szabad és szürkével ha foglalt.
+|K01| Férőhely lefoglalása | Ez egy külön form amelyen az adatok megadásával letudja foglalni a kemping helyet adott időre.
+|K02| Foglalások kilistázása | A már lefoglalt férőhelyeket táblázatban megjeleníti az oldalon 
 ## Riportok
 
 ## Fogalomtár
