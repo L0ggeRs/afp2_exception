@@ -8,7 +8,21 @@
 - A program célja, hogy könnyen lehessen tájékozódni a felületen
 
 ## Projektterv
+**Projekt szerepkörök, felelősségek**
 
+-   szerepkörök
+    -   product owner: Tajti Tibor
+    -   scrum master: Tamasi Marcell, Dancs Viktor
+    - junior fejlesztők: Bencsik Krisztián Dániel, Guti Adrián, Karaba Márk, Ungi Keve
+-   felelősségek:
+    -   scrum master: A Scrum mester felügyeli és megkönnyíti a folyamat fenntartását, segíti a csapatot, ha problémába ütközik, illetve felügyeli, hogy mindenki betartja-e a Scrum alapvető szabályait.
+    -   junior fejlesztő: A projekt elkészítése.
+
+**Projekt munkások és felelősségeik**
+
+-   Webfelület:
+-   Frontend: 
+-   Backend: 
 ## Rendszerterv 
 
 ## Üzleti folyamatok modellje
