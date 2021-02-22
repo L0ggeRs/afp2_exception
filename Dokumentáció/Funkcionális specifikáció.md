@@ -65,6 +65,7 @@ A cellára kattintva megjelenik az adott cella információt tartalmazó ablak
 Számla kiállítást a "Foglalások" menüpontból lehet indítani.
 
 Navigációs menü:
+
 Kezdőlap: térkép + idő-intervallum beállítás
 Foglalás: űrlap egy cella lefoglalásához
 Foglalások: táblázat a jelenleg rendszerben lévő foglalásokkal
