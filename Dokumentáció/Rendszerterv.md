@@ -76,6 +76,11 @@ Szerver:
 ## Absztrakt domain modell
 
 ## Architekturális terv
+ - Backend
+	A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk.
+	A kliensekkel JSON objektumokkal kommunikál.
+ - Frontend
+	A web alkalmazás JetBrains Webstorm keretrendszer használatával készül el
 
 ## Adatbázis terv
 
