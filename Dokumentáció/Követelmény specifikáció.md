@@ -12,9 +12,7 @@ A távozás előtt a fizetéskor a rendszer egy számlát állít ki, amit ki le
  - Nehezebb nyomon követni a bevételeket és a kiadásokat is, feleslegesen sok munkával tud járni a papírok kezelése.
 ## Vágyálom rendszer
 
-- A vágyálom rendszer azért felelős, hogy kifejtsük benne mit szeretnénk
-  célul a programunkban a 100%-ban ideális esetben. Ilyen-olyan
-  feature-ök jelenléte, és ideális állapotuk.
+- A vágyálom rendszer azért felelős, hogy kifejtsük benne mit szeretnénk célul a programunkban a 100%-ban ideális esetben. Ilyen-olyan feature-ök jelenléte, és ideális állapotuk.
 - A projekt célja egy olyan szoftver elkészítése, ami lehetőséget nyújt az egyszerűbb, korszerűbb adatok kezeléséhez a kemping részére. Zavartalan működést biztosít.
 - Könnyíti a könyvelési feladatokat. Csökkenti ezeknek az idejét és a költségét, ezzel megkönnyítve az alkalmazottak munkáját.
 - A rendszer a pénzkezelést és a foglalások követhetőségét sokkal egyszerűbbé teszi. 
