@@ -83,7 +83,9 @@ A kemping szolgáltatáshoz készült az adatbázis, ennek a tervét mutatja a m
 ![Adatbázis terv](https://github.com/L0ggeRs/afp2_exception/blob/main/Dokumentáció/database_model.png)
 
 ## Implementációs terv
+A Webes felület főként HTML, CSS, és Javascript nyelven fog készülni. Ezeket a technológiákat amennyire csak lehet külön fájlokba írva készítjük, és úgy fogjuk egymáshoz csatolni a jobb átláthatóság, könnyebb változtathatóság, és könnyebb bővítés érdekében.
 
+ Képes lesz felhasználni a Backend részen futó REST szolgáltatás metódusait, ezáltal tud felvinni és lekérdezni adatokat az adatbázisból. 
 ## Tesztterv
 
 ## Telepítési terv
