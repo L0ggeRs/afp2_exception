@@ -1,3 +1,5 @@
+# Funkcionális specifikáció
+
 ## Áttekintés
 
  - A fejlesztésünk célja, egy olyan webes alkalmazás, mellyel képesek leszünk nyilvántartani egy kemping foglalásait és megjeleníti a parcelláinak állapotát.
