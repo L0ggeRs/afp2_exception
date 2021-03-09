@@ -26,3 +26,13 @@ CREATE TABLE guests(
     guest_email VARCHAR(255) NOT NULL,
     guest_phone INT(11) NOT NULL
 )
+
+ALTER TABLE invoices ADD CONSTRAINT FK_GuestsInvoices FOREIGN KEY (guest_id) REFERENCES guest(guest_id);
+
+ALTER TABLE invoices ADD CONSTRAINT FK_ReservesInvoices FOREIGN KEY (guest_id) REFERENCES reserves(guest_id);
+
+ALTER TABLE reserves ADD CONSTRAINT FK_CampsReserves FOREIGN KEY (guest_id) REFERENCES camps(guest_id);
+
+ALTER TABLE reserves ADD CONSTRAINT FK_GuestsReserves FOREIGN KEY (camp_id) REFERENCES guest(guest_id);
+
+
