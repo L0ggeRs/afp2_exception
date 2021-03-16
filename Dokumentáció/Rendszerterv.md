@@ -81,7 +81,7 @@ Szerver:
 
  - Komponensek: 
 ## Absztrakt domain modell
-A program működése során a recepciós egy féle szerepkörben figyelhető meg. A recepciós képes zenét kempinghelyet foglalni, számlát kiállítani, illetve vendéget regisztrálni az adatbázisba.
+A program működése során a recepciós egy féle szerepkörben figyelhető meg. A recepciós képes kempinghelyet foglalni, számlát kiállítani, illetve vendéget regisztrálni az adatbázisba.
 ## Architekturális terv
  - Backend
 	A rendszerhez szükség van egy adatbázis szerverre, ebben az esetben MySql-t használunk.
