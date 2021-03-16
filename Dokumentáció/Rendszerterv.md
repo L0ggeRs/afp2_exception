@@ -27,6 +27,13 @@
 
 ## Üzleti folyamatok modellje
 
+- Üzleti szereplők:
+  - Recepciós
+  
+- Üzleti folyamatok:
+  - Feladatok felvitele módosítása
+  - Adatbázis hozzáférés
+
 ## Követelmények
 
  - Funkcionális
