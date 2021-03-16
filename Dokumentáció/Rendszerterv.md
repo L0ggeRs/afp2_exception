@@ -100,6 +100,13 @@ A Webes felület főként HTML, CSS, és Javascript nyelven fog készülni. Ezek
  Képes lesz felhasználni a Backend részen futó REST szolgáltatás metódusait, ezáltal tud felvinni és lekérdezni adatokat az adatbázisból. 
 ## Tesztterv
 
+Backend:
+	A backend komponenseket az intellij IDEA bővített környezetben, Maven pluginnal lesz tesztelve. A szükséges komponensek megírása után.
+Frontend:
+	A frontend komponenseket real timeban teszteljük, WEBStorm környezetben.
+
+A user teszteket a fejlesztés végén végezzük el a funkciók kipróbálásával és dokumentálásával. Konténerizált szerverrel.
+
 ## Telepítési terv
 
  - A rendszer beüzemelésekor ajánlott egy hozzá szakértő emberre bízni a beüzemelést mivel a szerver elindításához szükség van némi hozzáértéshez.
