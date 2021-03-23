@@ -3,7 +3,6 @@ package hu.uni.eku.tzs.dao.entity;
 import lombok.*;
 import javax.persistence.*;
 
-
 @Entity
 @Data
 @Builder
@@ -11,16 +10,16 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Guest {
+public class Invoice {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer Id;
     @Column
+    private Integer invoiceId;
+    @Column
     private Integer guestId;
     @Column
-    private String name;
+    private String paymentMethod;
     @Column
-    private String email;
-    @Column
-    private String phone;
+    private Integer reserveId;
 }
