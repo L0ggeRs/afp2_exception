@@ -2,10 +2,11 @@ import axios from 'axios';
 import dispatcher from '../dispatcher/Dispatcher';
 import * as actionConstants from '../dispatcher/GuestActionConstants';
 
-export const recordGuest = ({GuestName,GuestEmail,GuestPhone}) =>{
+export const recordGuest = ({GuestName,GuestID,GuestEmail,GuestPhone}) =>{
     axios.post('/guest/record',
         {
             name : GuestName,
+            guestId : GuestID,
             email: GuestEmail,
             phone : GuestPhone,
         })

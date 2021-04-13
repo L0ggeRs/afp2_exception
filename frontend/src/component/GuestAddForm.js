@@ -8,6 +8,7 @@ class GuestAddForm extends React.Component {
         super(props);
         this.state = {
             GuestName: 'Béla',
+            GuestID: '0',
             GuestEmail: 'example@example.com',
             GuestPhone: '123456789',
         };
@@ -35,6 +36,18 @@ class GuestAddForm extends React.Component {
                                        onChange={(e) => {
                                            let st = this.state;
                                            st.GuestName = e.target.value;
+                                           this.setState(st);
+                                       }}
+                                />
+                            </div>
+                            <div className="p-2">
+                                <h4>ID :</h4>
+                                <input className={"form-control myinput"}
+                                       type={"text"}
+                                       value={this.state.GuestID}
+                                       onChange={(e) => {
+                                           let st = this.state;
+                                           st.GuestID = e.target.value;
                                            this.setState(st);
                                        }}
                                 />
