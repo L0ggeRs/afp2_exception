@@ -58,3 +58,4 @@ AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) 
 
  - Cella: egy kisebb terület, melyen meg tudnak szállni a vendégek lakókocsival vagy sátorral
  - Számla: Olyan számadási bizonylat, amelyet ezen szolgáltatás teljesítésekor állítanak ki
+ 
