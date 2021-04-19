@@ -11,7 +11,7 @@ export const recordGuest = ({GuestName,GuestID,GuestEmail,GuestPhone}) =>{
             phone : GuestPhone,
         })
         .then(() => {
-            fetchComplexNumbers();
+            fetchGuests();
             dispatcher.dispatch({action : actionConstants.clearError});
         })
         .catch((err) => {
@@ -19,11 +19,11 @@ export const recordGuest = ({GuestName,GuestID,GuestEmail,GuestPhone}) =>{
                 action : actionConstants.showError,
                 payload: `${err.response.status}-${err.response.statusText}: ${err.response.data.message}`
             });
-            fetchComplexNumbers();
+            fetchGuests();
         });
 };
 
-export const fetchComplexNumbers = () =>{
+export const fetchGuests = () =>{
 
     axios.get('/guest/').then((resp)=>{
         dispatcher.dispatch({
