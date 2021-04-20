@@ -1,21 +1,13 @@
 import React from 'react';
+import Navbar from "./component/Navbar/Navbar";
 import './App.scss';
-import GuestAddForm from "./component/GuestAddForm";
-import GuestList from "./component/GuestList";
 
 function App() {
-  return (
-    <div className={["App","container"]}>
-        <div className={"row"}>
-            <div className={"col-md-3"}></div>
-            <div className={"col-md-6"}>
-              <GuestAddForm></GuestAddForm>
-                <GuestList></GuestList>
-            </div>
-            <div className={"col-md-3"}></div>
+    return (
+        <div className="App">
+            <Navbar></Navbar>
         </div>
-    </div>
-  );
+    );
 }
 
 export default App;

@@ -23,7 +23,7 @@
         "eslint-plugin-react"
     ],
     "rules": {
-	    "semi" : [2, "always"],
+	    "semi" : 0,
 	    "no-undef": [0, "always"],
         "react/prop-types": "off"
     },
