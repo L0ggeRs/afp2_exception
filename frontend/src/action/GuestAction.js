@@ -32,3 +32,18 @@ export const fetchGuests = () =>{
         });
     });
 };
+export const DeleteGuests = (id) =>{
+
+    axios.delete('/guest/'+id).then(() => {
+        fetchGuests();
+        dispatcher.dispatch({action : actionConstants.deleteError});
+    })
+        .catch((err) => {
+            dispatcher.dispatch({
+                action : actionConstants.showError,
+                payload: `${err.response.status}-${err.response.statusText}: ${err.response.data.message}`
+            });
+            fetchGuests();
+        });
+};
+
