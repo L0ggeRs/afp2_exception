@@ -17,13 +17,13 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Képek',
-        path: '/kepek',
+        title: 'Vendég',
+        path: '/vendeg',
         cName: 'nav-links'
     },
     {
-        title: 'Elérhetőségek',
-        path: '/elerhetosegek',
+        title: 'Képek',
+        path: '/kepek',
         cName: 'nav-links'
-    },
+    }
 ]
