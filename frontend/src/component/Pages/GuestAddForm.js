@@ -1,6 +1,6 @@
 import React from "react";
-import ErrorMessageWell from "./ErrorMessageWell";
-import * as actions from "../action/GuestAction";
+import ErrorMessageWell from "../ErrorMessageWell";
+import * as actions from "../../action/GuestAction";
 
 
 class GuestAddForm extends React.Component {

@@ -1,21 +1,32 @@
 import React from 'react';
+import Navbar from "./component/Navbar/Navbar";
 import './App.scss';
-import GuestAddForm from "./component/GuestAddForm";
-import GuestList from "./component/GuestList";
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import GuestAdd from './component/Pages/GuestAddForm';
+import Contacts from './component/Pages/Contacts';
+import Homepage from './component/Pages/HomePage';
+import Pictures from './component/Pages/Pictures';
+import ReservedDates from './component/Pages/ReservedDates';
+
+
+
+
 
 function App() {
-  return (
-    <div className={["App","container"]}>
-        <div className={"row"}>
-            <div className={"col-md-3"}></div>
-            <div className={"col-md-6"}>
-              <GuestAddForm></GuestAddForm>
-                <GuestList></GuestList>
-            </div>
-            <div className={"col-md-3"}></div>
+    return (
+        <div className="App">
+            <Router>
+        <Navbar />
+            <Switch>
+                <Route path='/kezdolap'  component={Homepage} />
+                <Route path='/foglalas' exact component={GuestAdd} />
+                <Route path='/idopontok'  component={ReservedDates} />
+                <Route path='/kepek'  component={Pictures} />
+                <Route path='/elerhetosegek'  component={Contacts} />
+            </Switch>
+            </Router>
         </div>
-    </div>
-  );
+    );
 }
 
 export default App;
