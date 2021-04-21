@@ -9,9 +9,6 @@ import Pictures from './component/Pages/Pictures';
 import ReservedDates from './component/Pages/ReservedDates';
 
 
-
-
-
 function App() {
     return (
         <div className="App">
