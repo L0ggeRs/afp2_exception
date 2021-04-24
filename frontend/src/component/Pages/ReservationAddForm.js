@@ -13,8 +13,8 @@ class ReservationAddForm extends React.Component {
             CampingStyle: '0',
             Electricity : true,
             Price : '0',
-            ReservationStart : "2000-01-01T00:00",
-            ReservationEnd : "2000-01-02T00:00"
+            ReservationStart : "2000-01-01T00:00:00.000",
+            ReservationEnd : "2000-01-01T00:00:00.000"
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
