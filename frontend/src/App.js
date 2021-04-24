@@ -3,7 +3,7 @@ import Navbar from "./component/Navbar/Navbar";
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import GuestAdd from './component/Pages/GuestAddForm';
-import Reserve from './component/Pages/Reserve';
+import Reserve from './component/Pages/ReservationAddForm';
 import Homepage from './component/Pages/HomePage';
 import Pictures from './component/Pages/Pictures';
 import ReservedDates from './component/Pages/ReservedDates';
