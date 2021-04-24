@@ -6,7 +6,7 @@ import GuestAdd from './component/Pages/GuestAddForm';
 import Reserve from './component/Pages/ReservationAddForm';
 import Homepage from './component/Pages/HomePage';
 import Pictures from './component/Pages/Pictures';
-import ReservedDates from './component/Pages/ReservedDates';
+import ReservedDates from './component/ReservationList';
 
 
 function App() {
