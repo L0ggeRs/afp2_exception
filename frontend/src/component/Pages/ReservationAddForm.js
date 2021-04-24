@@ -79,65 +79,49 @@ class ReservationAddForm extends React.Component {
                                    }}
                             />
                         </div>
-                        <div className="form-group">
-                            <div className="d-flex justify-content-end">
-                                <div className="p-2">
-                                    <h4>Electricity:</h4>
-                                    <input className={"form-control myinput"} type={"string"}
-                                           value={this.state.Electricity}
-                                           onChange={(e) => {
-                                               let st = this.state;
-                                               st.Electricity = e.target.value;
-                                               this.setState(st);
-                                           }}
-                                    />
-                                </div>
-                            </div>
+                        <div className="p-2">
+                            <h4>Electricity:</h4>
+                            <input className={"form-control myinput"} type={"string"}
+                                   value={this.state.Electricity}
+                                   onChange={(e) => {
+                                       let st = this.state;
+                                       st.Electricity = e.target.value;
+                                       this.setState(st);
+                                   }}
+                            />
                         </div>
-                        <div className="form-group">
-                            <div className="d-flex justify-content-end">
-                                <div className="p-2">
-                                    <h4>Price:</h4>
-                                    <input className={"form-control myinput"} type={"string"}
-                                           value={this.state.Price}
-                                           onChange={(e) => {
-                                               let st = this.state;
-                                               st.Price = e.target.value;
-                                               this.setState(st);
-                                           }}
-                                    />
-                                </div>
-                            </div>
+                        <div className="p-2">
+                        <h4>Price:</h4>
+                        <input className={"form-control myinput"} type={"string"}
+                               value={this.state.Price}
+                               onChange={(e) => {
+                                   let st = this.state;
+                                   st.Price = e.target.value;
+                                   this.setState(st);
+                               }}
+                        />
                         </div>
-                        <div className="form-group">
-                            <div className="d-flex justify-content-end">
-                                <div className="p-2">
-                                    <h4>ReservationStart:</h4>
-                                    <input className={"form-control myinput"} type={"string"}
-                                           value={this.state.ReservationStart}
-                                           onChange={(e) => {
-                                               let st = this.state;
-                                               st.ReservationStart = e.target.value;
-                                               this.setState(st);
-                                           }}
-                                    />
-                                </div>
-                            </div>
+                        <div className="p-2">
+                            <h4>ReservationStart:</h4>
+                            <input className={"form-control myinput"} type={"string"}
+                                   value={this.state.ReservationStart}
+                                   onChange={(e) => {
+                                       let st = this.state;
+                                       st.ReservationStart = e.target.value;
+                                       this.setState(st);
+                                   }}
+                            />
                         </div>
-                        <div className="form-group">
-                            <div className="d-flex justify-content-end">
-                                <div className="p-2">
-                                    <h4>ReservationEnd:</h4>
-                                    <input className={"form-control myinput"} type={"string"}
-                                           value={this.state.ReservationEnd}
-                                           onChange={(e) => {
-                                               let st = this.state;
-                                               st.ReservationEnd = e.target.value;
-                                               this.setState(st);
-                                           }}
-                                    />
-                                </div>
-                            </div>
+                        <div className="p-2">
+                            <h4>ReservationEnd:</h4>
+                            <input className={"form-control myinput"} type={"string"}
+                                   value={this.state.ReservationEnd}
+                                   onChange={(e) => {
+                                       let st = this.state;
+                                       st.ReservationEnd = e.target.value;
+                                       this.setState(st);
+                                   }}
+                            />
                         </div>
                         <div className="p-2">
                             <br/><br/><br/><br/>
