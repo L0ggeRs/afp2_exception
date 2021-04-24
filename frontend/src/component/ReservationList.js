@@ -44,6 +44,7 @@ class ReservationList extends React.Component{
                         {this.state.reservations.map(({reservationId, guestId, campId, camping_style, electricity, price, reserve_start, reserve_end})=>{
                             return(
                                 <tr key={reservationId}>
+                                    <td>{reservationId}</td>
                                     <td>{guestId}</td>
                                     <td>{campId}</td>
                                     <td>{camping_style}</td>
