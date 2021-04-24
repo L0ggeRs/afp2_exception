@@ -67,6 +67,18 @@ class ReservationAddForm extends React.Component {
                                    }}
                             />
                         </div>
+                        <div className="p-2">
+                            <h4>Típus:</h4>
+                            <input className={"form-control myinput"}
+                                   type={"text"}
+                                   value={this.state.CampingStyle}
+                                   onChange={(e) => {
+                                       let st = this.state;
+                                       st.CampingStyle = e.target.value;
+                                       this.setState(st);
+                                   }}
+                            />
+                        </div>
                         <div className="form-group">
                             <div className="d-flex justify-content-end">
                                 <div className="p-2">
