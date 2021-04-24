@@ -4,9 +4,11 @@ import './App.scss';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import GuestAdd from './component/Pages/GuestAddForm';
 import Reserve from './component/Pages/ReservationAddForm';
+import InvoiceAdd from './component/Pages/InvoiceAddForm'
 import Homepage from './component/Pages/HomePage';
 import Pictures from './component/Pages/Pictures';
 import ReservedDates from './component/ReservationList';
+import InvoiceList from './component/InvoiceList';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
                 <Route path='/idopontok'  component={ReservedDates} />
                 <Route path='/kepek'  component={Pictures} />
                 <Route path='/vendeg'  component={GuestAdd} />
+                <Route path='/szamlaAdd'  component={InvoiceAdd} />
+                <Route path='/szamla'  component={InvoiceList} />
             </Switch>
             </Router>
         </div>
