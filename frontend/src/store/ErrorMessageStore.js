@@ -6,7 +6,7 @@ class ErrorMessageStore extends EventEmitter{
 
     _errorMsg = "";
 
-    emitChage(){
+    emitChange(){
         this.emit('Change');
     }
 
@@ -27,11 +27,11 @@ dispatcher.register(({action,payload})=>{
         return;
     }
     store._errorMsg = payload;
-    store.emitChage();
+    store.emitChange();
 });
 
 dispatcher.register(({action})=>{
    if(action !== actionConstants.clearError) return;
    store._errorMsg = "";
-   store.emitChage();
+   store.emitChange();
 });

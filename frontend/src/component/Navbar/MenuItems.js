@@ -25,5 +25,15 @@ export const MenuItems = [
         title: 'Képek',
         path: '/kepek',
         cName: 'nav-links'
+    },
+    {
+        title: 'Számla létrehozása',
+        path: '/szamlaAdd',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Számla',
+        path: '/szamla',
+        cName: 'nav-links'
     }
 ]
