@@ -32,7 +32,7 @@ class ReservationAddForm extends React.Component {
                 <form className="myform">
                     <div className="d-flex justify-content-md-end">
                         <div className="p-2">
-                            <h4>ReserveID:</h4>
+                            <h4>FoglalásID:</h4>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.ReserveID}
@@ -44,7 +44,7 @@ class ReservationAddForm extends React.Component {
                             />
                         </div>
                         <div className="p-2">
-                            <h4>GuestID:</h4>
+                            <h4>VendégID:</h4>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.GuestID}
@@ -80,7 +80,7 @@ class ReservationAddForm extends React.Component {
                             />
                         </div>
                         <div className="p-2">
-                            <h4>Electricity:</h4>
+                            <h4>Áram:</h4>
                             <input className={"form-control myinput"} type={"string"}
                                    value={this.state.Electricity}
                                    onChange={(e) => {
@@ -91,7 +91,7 @@ class ReservationAddForm extends React.Component {
                             />
                         </div>
                         <div className="p-2">
-                        <h4>Price:</h4>
+                        <h4>Ár:</h4>
                         <input className={"form-control myinput"} type={"string"}
                                value={this.state.Price}
                                onChange={(e) => {
@@ -102,7 +102,7 @@ class ReservationAddForm extends React.Component {
                         />
                         </div>
                         <div className="p-2">
-                            <h4>ReservationStart:</h4>
+                            <h4>Foglalás kezdete:</h4>
                             <input className={"form-control myinput"} type={"string"}
                                    value={this.state.ReservationStart}
                                    onChange={(e) => {
@@ -113,7 +113,7 @@ class ReservationAddForm extends React.Component {
                             />
                         </div>
                         <div className="p-2">
-                            <h4>ReservationEnd:</h4>
+                            <h4>Foglalás vége:</h4>
                             <input className={"form-control myinput"} type={"string"}
                                    value={this.state.ReservationEnd}
                                    onChange={(e) => {
