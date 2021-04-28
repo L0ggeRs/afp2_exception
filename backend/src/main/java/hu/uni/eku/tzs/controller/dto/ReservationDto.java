@@ -3,6 +3,7 @@ package hu.uni.eku.tzs.controller.dto;
 import lombok.Builder;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -14,6 +15,6 @@ public class ReservationDto {
     private Integer camping_style;
     private boolean electricity;
     private Integer price;
-    private LocalDateTime reserve_start;
-    private LocalDateTime reserve_end;
+    private LocalDate reserve_start;
+    private LocalDate reserve_end;
 }
