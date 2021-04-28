@@ -19,6 +19,8 @@ public class Invoice {
     @Column
     private Integer guestId;
     @Column
+    private Integer price;
+    @Column
     private String paymentMethod;
     @Column
     private Integer reserveId;
