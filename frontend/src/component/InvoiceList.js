@@ -31,17 +31,19 @@ class InvoiceList extends React.Component{
                         <tr>
                             <td>SzámlaID</td>
                             <td>VendégID</td>
+                            <td>Ár</td>
                             <td>Fizetés</td>
                             <td>FoglalásID</td>
                             <td> <button className="btn btn-info" onClick={()=> actions.fetchInvoices(this.state)}>Listáz</button> </td>
                         </tr>
                         </thead>
                         <tbody>
-                        {this.state.invoices.map(({invoiceId, guestId, paymentMethod, reserveId})=>{
+                        {this.state.invoices.map(({invoiceId, guestId, price, paymentMethod, reserveId})=>{
                             return(
                                 <tr key={invoiceId}>
                                     <td>{invoiceId}</td>
                                     <td>{guestId}</td>
+                                    <td>{price}</td>
                                     <td>{paymentMethod}</td>
                                     <td>{reserveId}</td>
                                 </tr>

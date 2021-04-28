@@ -9,6 +9,7 @@ class InvoiceAddForm extends React.Component {
         this.state = {
             InvoiceID: '0',
             GuestID: '0',
+            Price: '0',
             PaymentMethod: "készpénz",
             ReserveID: '0'
         };
@@ -47,6 +48,18 @@ class InvoiceAddForm extends React.Component {
                                    onChange={(e) => {
                                        let st = this.state;
                                        st.GuestID = e.target.value;
+                                       this.setState(st);
+                                   }}
+                            />
+                        </div>
+                        <div className="p-2">
+                            <h4>Ár:</h4>
+                            <input className={"form-control myinput"}
+                                   type={"text"}
+                                   value={this.state.Price}
+                                   onChange={(e) => {
+                                       let st = this.state;
+                                       st.Price = e.target.value;
                                        this.setState(st);
                                    }}
                             />

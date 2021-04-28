@@ -2,11 +2,12 @@ import axios from 'axios';
 import dispatcher from '../dispatcher/Dispatcher';
 import * as actionConstants from '../dispatcher/InvoiceActionConstants';
 
-export const recordInvoice = ({InvoiceID,GuestID,PaymentMethod,ReserveID}) =>{
+export const recordInvoice = ({InvoiceID,GuestID,Price,PaymentMethod,ReserveID}) =>{
     axios.post('/invoice/record',
         {
             invoiceId : InvoiceID,
             guestId : GuestID,
+            price: Price,
             paymentMethod: PaymentMethod,
             reserveId : ReserveID
         })
