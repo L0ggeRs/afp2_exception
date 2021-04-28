@@ -40,6 +40,7 @@ public class InvoiceDaoImpl implements InvoiceDao {
             return new Invoice(
                     entity.getInvoiceId(),
                     entity.getGuestId(),
+                    entity.getPrice(),
                     entity.getPaymentMethod(),
                     entity.getReserveId()
             );
@@ -49,6 +50,7 @@ public class InvoiceDaoImpl implements InvoiceDao {
             return hu.uni.eku.tzs.dao.entity.Invoice.builder()
                     .invoiceId(model.getInvoiceId())
                     .guestId(model.getGuestId())
+                    .price(model.getPrice())
                     .paymentMethod(model.getPaymentMethod())
                     .reserveId(model.getReserveId())
                     .build();

@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 public class InvoiceRecordRequestDto {
     private Integer invoiceId;
     private Integer guestId;
+    private Integer price;
     private String paymentMethod;
     private Integer reserveId;
 }

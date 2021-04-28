@@ -35,6 +35,7 @@ public class InvoiceController {
                 InvoiceDto.builder()
                         .invoiceId(model.getInvoiceId())
                         .guestId(model.getGuestId())
+                        .price(model.getPrice())
                         .paymentMethod(model.getPaymentMethod())
                         .reserveId(model.getReserveId())
                         .build()
@@ -50,6 +51,7 @@ public class InvoiceController {
             service.record(new Invoice(
                     request.getInvoiceId(),
                     request.getGuestId(),
+                    request.getPrice(),
                     request.getPaymentMethod(),
                     request.getReserveId()));
         }catch (InvoiceAlreadyExistsException e){

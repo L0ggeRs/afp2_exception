@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 public class InvoiceDto {
     private Integer invoiceId;
     private Integer guestId;
+    private Integer price;
     private String paymentMethod;
     private Integer reserveId;
 }
