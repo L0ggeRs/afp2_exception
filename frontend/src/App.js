@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from "./component/Navbar/Navbar";
+import Navbar from "./component/Pages/Navbar/Navbar";
 import './App.scss';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import GuestAdd from './component/Pages/GuestAddForm';
 import Reserve from './component/Pages/ReservationAddForm';
 import InvoiceAdd from './component/Pages/InvoiceAddForm'
-import Homepage from './component/Pages/HomePage';
+import Homepage from './component/Pages/Hero/HomePage';
 import Pictures from './component/Pages/Pictures';
 import ReservedDates from './component/ReservationList';
 import InvoiceList from './component/InvoiceList';
