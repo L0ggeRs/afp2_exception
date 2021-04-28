@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItems } from "./MenuItems"
 import './Navbar.css'
-import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
     state = { clicked: false }
@@ -23,9 +22,7 @@ class Navbar extends Component {
                     {MenuItems.map((item,index) =>{
                        return(
                            <li key={index} className={item.cName}>
-                               <Link to={item.path}>
-                                   {item.title}
-                               </Link>
+                               <a href={item.path}>{item.title}</a>
                            </li>
                        )
                     })}
