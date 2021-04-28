@@ -46,6 +46,7 @@ class InvoiceList extends React.Component{
                                     <td>{price}</td>
                                     <td>{paymentMethod}</td>
                                     <td>{reserveId}</td>
+                                    <td> <button className="btn btn-info" onClick={()=> actions.DeleteInvoices(invoiceId)}>Töröl</button> </td>
                                 </tr>
                             );
                         })}
