@@ -7,16 +7,21 @@ class ReservationAddForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ReserveID: '0',
-            GuestID: '0',
-            CampID: '0',
-            CampingStyle: '0',
-            Electricity : true,
-            Price : '0',
+            ReserveID:'' ,
+            GuestID: '',
+            CampID: '',
+            CampingStyle:'' ,
+            Electricity :'',
+            Price : '',
             ReservationStart : "2000-01-01T00:00:00.000",
             ReservationEnd : "2000-01-01T00:00:00.000"
         };
         this.formOnChange = this.formOnChange.bind(this);
+    }
+    isNumber(n){
+        const re = /^[0-9\b]+$/;
+        return re.test(n)
+
     }
 
     formOnChange(event) {
@@ -128,7 +133,10 @@ class ReservationAddForm extends React.Component {
                             <button type={"submit"}
                                     className="btn btn-info"
                                     onClick={() => {
-                                        actions.recordReservations(this.state);
+                                        if (!this.isNumber(this.state.ReserveID)) {alert("A Foglalás ID hibás\nCsak számot lehet megadni");                                        }
+                                        else if (!this.isNumber(this.state.GuestID)) {alert("A vendég id nem megfelő");}
+                                        else if (!this.isNumber(this.state.CampID)) {alert("A cmaping id nem megfelő");}
+                                        else{actions.recordReservations(this.state);}
                                     }}
                             >Létrehoz
                             </button>
