@@ -1,16 +1,15 @@
 import React from "react";
 import ErrorMessageWell from "../ErrorMessageWell";
 import * as actions from "../../action/GuestAction";
+import "./GuestAddForm.css";
+import "../GuestList";
+import GuestList from "../GuestList";
 
 
 class GuestAddForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            GuestName: 'Béla',
-            GuestID: '',
-            GuestEmail: 'example@example.com',
-            GuestPhone: '123456789',
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
@@ -31,14 +30,16 @@ class GuestAddForm extends React.Component {
     render() {
         return (
             <div>
-                <ErrorMessageWell/>
-                <h2>Vendég létrehozása</h2>
-                <hr/>
-                <form className="myform">
+                <h3 className="text-center cim">Vendég létrehozása</h3>
+                <div className="table-responsive">
+                    <ErrorMessageWell/>
+                    <hr/>
 
-                        <div className="d-flex justify-content-md-end">
-                            <div className="p-2">
-                                <h4>Név:</h4>
+                    <table className="table borderless tablazat">
+                        <tbody>
+                        <tr className="Nev">
+                            <td>Név:</td>
+                            <td>
                                 <input className={"form-control myinput"}
                                        type={"text"}
                                        value={this.state.GuestName}
@@ -48,9 +49,12 @@ class GuestAddForm extends React.Component {
                                            this.state.setState(st);
                                        }}
                                 />
-                            </div>
-                            <div className="p-2">
-                                <h4>ID :</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>ID:</td>
+                            <td>
                                 <input className={"form-control myinput"}
                                        type={"text"}
                                        value={this.state.GuestID}
@@ -61,9 +65,14 @@ class GuestAddForm extends React.Component {
                                                 }
                                        }
 
+
                                 />
-                            </div>
-                            <div className="p-2"><h4>Email:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Email cím:</td>
+                            <td>
                                 <input className={"form-control myinput"}
                                        type={"text"}
                                        value={this.state.GuestEmail}
@@ -72,15 +81,13 @@ class GuestAddForm extends React.Component {
                                            st.GuestEmail = e.target.value;
                                            this.setState(st);
                                        }}
-                                /></div>
+                                />
+                            </td>
+                        </tr>
 
-
-
-
-                    <div className="form-group">
-                        <div className="d-flex justify-content-end">
-                            <div className="p-2">
-                                <h4>Telefonszám:</h4>
+                        <tr>
+                            <td>Telefonszám:</td>
+                            <td>
                                 <input className={"form-control myinput"} type={"string"}
                                        value={this.state.GuestPhone}
                                        onChange={(e) => {
@@ -91,28 +98,33 @@ class GuestAddForm extends React.Component {
                                            }
                                        }}
                                 />
-                            </div>
-                        </div>
+                            </td>
+                        </tr>
 
-                        </div>
-                        <div className="p-2">
-                            <br/><br/><br/><br/>
-                            <button type={"submit"}
-                                    className="btn btn-info"
-                                    onClick={() => {
-                                        actions.recordGuest(this.state);
-                                    }}
-                            >Létrehoz
-                            </button>
-                        </div>
+                        <tr>
+                            <td
+                                colSpan={2}>
+                                <button type={"submit"}
+                                        className="btn btn-info"
+                                        onClick={() => {
+                                            actions.recordGuest(this.state);
+                                        }}
+                                >Létrehozás
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                    <div className="listazas">
+                        <GuestList/>
                     </div>
-                    <br/>
-
-                </form>
-
+                </div>
+                <br/>
 
             </div>
-        );
+
+    );
     }
-}
-export default  GuestAddForm;
+    }
+    export default  GuestAddForm;
