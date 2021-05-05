@@ -13,8 +13,8 @@ class ReservationAddForm extends React.Component {
             CampingStyle:'Karaván' ,
             Electricity :'',
             Price : '',
-            ReservationStart : "2000-01-01",
-            ReservationEnd : "2000-01-01"
+            ReservationStart : "2022-01-01",
+            ReservationEnd : "2022-01-01"
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
@@ -33,7 +33,16 @@ class ReservationAddForm extends React.Component {
         this.setState(st);
 
     }
+    IsPrice(n){
+        if (n<0) {alert("Minuszt nem lehet megadni")}
+        else if (!this.isNumber(n)) {alert("Hibás Ár\nNem számot adott meg");}
+        else {
+            let st = this.state;
+            st.Price = n;
+            this.setState(st);
+        }
 
+    }
     formOnChange(event) {
         const {name, value} = event.target;
         this.setState({[name]: value});
@@ -150,10 +159,11 @@ class ReservationAddForm extends React.Component {
                                     className="btn btn-info"
                                     onClick={() => {
                                         this.whichType(this.state.camping_style);
+                                        this.IsPrice(this.state.Price);
                                         if (!this.isNumber(this.state.ReserveID)) {alert("A Foglalás ID hibás\nCsak számot lehet megadni");                                        }
                                         else if (!this.isNumber(this.state.GuestID)) {alert("A vendég id nem megfelő");}
                                         else if (!this.isNumber(this.state.CampID)) {alert("A cmaping id nem megfelő");}
-                                        else if (this.state.camping_style === '') {alert("Választani kell !")}
+                                        else if (this.state.camping_style === '') {alert("Választani kell tipust !")}
                                         else{actions.recordReservations(this.state);}
                                     }}
                             >Létrehoz
