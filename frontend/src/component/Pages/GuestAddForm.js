@@ -29,13 +29,11 @@ class GuestAddForm extends React.Component {
     }
     render() {
         return (
-            <div>
-                <h3 className="text-center cim">Vendég létrehozása</h3>
+            <div className="GuestAddForm">
+                <h3 className="text-center GuestCim">Vendég létrehozása és listázása</h3>
                 <div className="table-responsive">
                     <ErrorMessageWell/>
-                    <hr/>
-
-                    <table className="table borderless tablazat">
+                    <table className="table GuestTablazat">
                         <tbody>
                         <tr className="Nev">
                             <td>Név:</td>
@@ -64,8 +62,6 @@ class GuestAddForm extends React.Component {
                                                   }
                                                 }
                                        }
-
-
                                 />
                             </td>
                         </tr>
@@ -105,7 +101,7 @@ class GuestAddForm extends React.Component {
                             <td
                                 colSpan={2}>
                                 <button type={"submit"}
-                                        className="btn btn-info"
+                                        className="btn btn-info Guestbtn"
                                         onClick={() => {
                                             actions.recordGuest(this.state);
                                         }}
@@ -116,7 +112,7 @@ class GuestAddForm extends React.Component {
                         </tbody>
 
                     </table>
-                    <div className="listazas">
+                    <div className="VendegListazas">
                         <GuestList/>
                     </div>
                 </div>
