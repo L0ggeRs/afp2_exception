@@ -32,9 +32,9 @@ class GuestList extends React.Component{
                     <table className="product_table table">
                         <thead>
                         <tr>
-                            <td>Id </td>
+                            <td>ID </td>
                             <td>Név </td>
-                            <td>Email </td>
+                            <td>Email cím </td>
                             <td>Telefonszám </td>
                             <td> <button className="btn btn-info" onClick={()=> actions.fetchGuests(this.state)}>Listáz</button></td>
                         </tr>
