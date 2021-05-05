@@ -1,0 +1,23 @@
+.cim{
+    font-family: "Berlin Sans FB";
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    margin-bottom: 1rem;
+    box-shadow: 3px 5px #e9ba23;
+    letter-spacing: 3px;
+}
+
+.tablazat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 100%;
+    background-color: darkgreen;
+}
+
+.listazas{
+    margin-right: 200px;
+    margin-left: 200px;
+}
