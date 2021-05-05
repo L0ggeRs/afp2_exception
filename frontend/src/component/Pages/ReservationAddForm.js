@@ -7,7 +7,14 @@ class ReservationAddForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-   
+            ReserveID: '0',
+            GuestID: '0',
+            CampID: '0',
+            CampingStyle: '0',
+            Electricity : true,
+            Price : '0',
+            ReservationStart : "2000-01-01",
+            ReservationEnd : "2000-01-02"
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
