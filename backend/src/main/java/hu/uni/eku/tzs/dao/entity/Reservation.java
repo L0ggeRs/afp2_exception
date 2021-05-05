@@ -3,7 +3,7 @@ package hu.uni.eku.tzs.dao.entity;
 import lombok.*;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -30,7 +30,7 @@ public class Reservation {
     @Column
     private Integer price;
     @Column
-    private LocalDateTime reserve_start;
+    private LocalDate reserve_start;
     @Column
-    private LocalDateTime reserve_end;
+    private LocalDate reserve_end;
 }
