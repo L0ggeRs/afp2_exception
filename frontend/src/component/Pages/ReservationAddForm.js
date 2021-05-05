@@ -86,11 +86,11 @@ class ReservationAddForm extends React.Component {
                         </div>
                         <div className="p-2">
                             <h4>Áram:</h4>
-                            <input className={"form-control myinput"} type={"string"}
+                            <input className={"form-control myinput"} type="checkbox"
                                    value={this.state.Electricity}
                                    onChange={(e) => {
                                        let st = this.state;
-                                       st.Electricity = e.target.value;
+                                       st.Electricity = e.target.checked;
                                        this.setState(st);
                                    }}
                             />
