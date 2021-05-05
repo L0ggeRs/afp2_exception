@@ -18,7 +18,31 @@ class ReservationAddForm extends React.Component {
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
+    isNumber(n){
+        const re = /^[0-9\b]+$/;
+        return re.test(n)
 
+    }
+
+    whichType(n){
+        let x ;
+        if (n === "Karaván") { x =1;}
+        else x= 0;
+        let st = this.state;
+        st.CampingStyle = x;
+        this.setState(st);
+
+    }
+    IsPrice(n){
+        if (n<0) {alert("Minuszt nem lehet megadni")}
+        else if (!this.isNumber(n)) {alert("Hibás Ár\nNem számot adott meg");}
+        else {
+            let st = this.state;
+            st.Price = n;
+            this.setState(st);
+        }
+
+    }
     formOnChange(event) {
         const {name, value} = event.target;
         this.setState({[name]: value});
@@ -71,21 +95,27 @@ class ReservationAddForm extends React.Component {
                             <h4>Típus:</h4>
                             <input className={"form-control myinput"}
                                    type={"text"}
-                                   value={this.state.CampingStyle}
+                                   list={"type"}
                                    onChange={(e) => {
+
                                        let st = this.state;
-                                       st.CampingStyle = e.target.value;
+                                       st.camping_style = e.target.value;
                                        this.setState(st);
                                    }}
                             />
+                            <datalist id={"type"}>
+                                <option value={"Karaván"} id={"1"}></option>
+                                <option value={"Sátor"} id={"0"}></option>
+                            </datalist>
+
                         </div>
                         <div className="p-2">
                             <h4>Áram:</h4>
-                            <input className={"form-control myinput"} type={"string"}
+                            <input className={"form-control myinput"} type="checkbox"
                                    value={this.state.Electricity}
                                    onChange={(e) => {
                                        let st = this.state;
-                                       st.Electricity = e.target.value;
+                                       st.Electricity = e.target.checked;
                                        this.setState(st);
                                    }}
                             />
@@ -128,7 +158,13 @@ class ReservationAddForm extends React.Component {
                             <button type={"submit"}
                                     className="btn btn-info"
                                     onClick={() => {
-                                        actions.recordReservations(this.state);
+                                        this.whichType(this.state.camping_style);
+                                        this.IsPrice(this.state.Price);
+                                        if (!this.isNumber(this.state.ReserveID)) {alert("A Foglalás ID hibás\nCsak számot lehet megadni");                                        }
+                                        else if (!this.isNumber(this.state.GuestID)) {alert("A vendég id nem megfelő");}
+                                        else if (!this.isNumber(this.state.CampID)) {alert("A cmaping id nem megfelő");}
+                                        else if (this.state.camping_style === '') {alert("Választani kell tipust !")}
+                                        else{actions.recordReservations(this.state);}
                                     }}
                             >Létrehoz
                             </button>
