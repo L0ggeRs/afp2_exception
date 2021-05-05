@@ -36,7 +36,7 @@ class GuestList extends React.Component{
                             <td>Név </td>
                             <td>Email cím </td>
                             <td>Telefonszám </td>
-                            <td> <button className="btn btn-info" onClick={()=> actions.fetchGuests(this.state)}>Listáz</button></td>
+                            <td> <button className="btn btn-info Guestbtn" onClick={()=> actions.fetchGuests(this.state)}>Listáz</button></td>
                         </tr>
                         </thead>
                         <tbody>
