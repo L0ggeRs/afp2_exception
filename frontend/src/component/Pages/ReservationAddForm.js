@@ -97,7 +97,7 @@ class ReservationAddForm extends React.Component {
                                    type={"text"}
                                    list={"type"}
                                    onChange={(e) => {
-                                       alert(e.target.value)
+                                    
                                        let st = this.state;
                                        st.camping_style = e.target.value;
                                        this.setState(st);
