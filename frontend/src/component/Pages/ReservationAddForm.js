@@ -7,14 +7,7 @@ class ReservationAddForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ReserveID:'' ,
-            GuestID: '',
-            CampID: '',
-            CampingStyle:'Karaván' ,
-            Electricity :'',
-            Price : '',
-            ReservationStart : "2022-01-01",
-            ReservationEnd : "2022-01-01"
+   
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
@@ -97,7 +90,7 @@ class ReservationAddForm extends React.Component {
                                    type={"text"}
                                    list={"type"}
                                    onChange={(e) => {
-                                    
+
                                        let st = this.state;
                                        st.camping_style = e.target.value;
                                        this.setState(st);
