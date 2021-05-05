@@ -10,17 +10,27 @@ class ReservationAddForm extends React.Component {
             ReserveID:'' ,
             GuestID: '',
             CampID: '',
-            CampingStyle:'' ,
+            CampingStyle:'Karaván' ,
             Electricity :'',
             Price : '',
-            ReservationStart : "2000-01-01T00:00:00.000",
-            ReservationEnd : "2000-01-01T00:00:00.000"
+            ReservationStart : "2000-01-01",
+            ReservationEnd : "2000-01-01"
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
     isNumber(n){
         const re = /^[0-9\b]+$/;
         return re.test(n)
+
+    }
+
+    whichType(n){
+        let x ;
+        if (n === "Karaván") { x =1;}
+        else x= 0;
+        let st = this.state;
+        st.CampingStyle = x;
+        this.setState(st);
 
     }
 
@@ -76,13 +86,19 @@ class ReservationAddForm extends React.Component {
                             <h4>Típus:</h4>
                             <input className={"form-control myinput"}
                                    type={"text"}
-                                   value={this.state.CampingStyle}
+                                   list={"type"}
                                    onChange={(e) => {
+                                       alert(e.target.value)
                                        let st = this.state;
-                                       st.CampingStyle = e.target.value;
+                                       st.camping_style = e.target.value;
                                        this.setState(st);
                                    }}
                             />
+                            <datalist id={"type"}>
+                                <option value={"Karaván"} id={"1"}></option>
+                                <option value={"Sátor"} id={"0"}></option>
+                            </datalist>
+
                         </div>
                         <div className="p-2">
                             <h4>Áram:</h4>
@@ -133,9 +149,11 @@ class ReservationAddForm extends React.Component {
                             <button type={"submit"}
                                     className="btn btn-info"
                                     onClick={() => {
+                                        this.whichType(this.state.camping_style);
                                         if (!this.isNumber(this.state.ReserveID)) {alert("A Foglalás ID hibás\nCsak számot lehet megadni");                                        }
                                         else if (!this.isNumber(this.state.GuestID)) {alert("A vendég id nem megfelő");}
                                         else if (!this.isNumber(this.state.CampID)) {alert("A cmaping id nem megfelő");}
+                                        else if (this.state.camping_style === '') {alert("Választani kell !")}
                                         else{actions.recordReservations(this.state);}
                                     }}
                             >Létrehoz
