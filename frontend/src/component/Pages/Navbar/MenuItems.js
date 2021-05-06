@@ -12,13 +12,13 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Lefoglalt időpontok',
-        path: '/idopontok',
+        title: 'Vendég',
+        path: '/vendeg',
         cName: 'nav-links'
     },
     {
-        title: 'Vendég',
-        path: '/vendeg',
+        title: 'Számla',
+        path: '/szamlaAdd',
         cName: 'nav-links'
     },
     {
@@ -26,14 +26,4 @@ export const MenuItems = [
         path: '/kepek',
         cName: 'nav-links'
     },
-    {
-        title: 'Számla létrehozása',
-        path: '/szamlaAdd',
-        cName: 'nav-links'
-    },
-    {
-        title: 'Számla',
-        path: '/szamla',
-        cName: 'nav-links'
-    }
 ]

@@ -1,0 +1,43 @@
+.GuestCim{
+    font-family: "Berlin Sans FB";
+    font-size: 60px;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    color: bisque;
+}
+
+.GuestTablazat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e9ba23;
+    font-size: 20px;
+    background: radial-gradient(farthest-side at 40px 40px,#ffe4c4 0%, #ffbb6a 100%);
+    width:50%;
+    margin-left: 350px;
+}
+
+.Guestbtn{
+    width: 100%;
+    background-color: darkgreen;
+}
+
+.VendegListazas{
+    margin-right: 200px;
+    margin-left: 200px;
+    border: 3px solid #e9ba23;
+    font-size: 20px;
+    background: radial-gradient(farthest-side at 40px 40px,#ffe4c4 0%, #ffbb6a 100%);
+    width: 70%;
+}
+
+.Guestbtn:hover{
+    background-color: coral;
+}
+
+.GuestAddForm{
+    background-image: url('ImageSlider/campingbg2.jpg');
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: repeat;
+}

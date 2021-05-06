@@ -1,6 +1,8 @@
 import React from "react";
 import ErrorMessageWell from "../ErrorMessageWell";
 import * as actions from "../../action/InvoiceAction";
+import InvoiceList from "../InvoiceList";
+import "./InvoiceAddForm.css";
 
 
 class InvoiceAddForm extends React.Component {
@@ -22,14 +24,18 @@ class InvoiceAddForm extends React.Component {
     }
     render() {
         return (
-            <div>
-                <ErrorMessageWell/>
-                <h2>Számla létrehozása</h2>
-                <hr/>
-                <form className="myform">
-                    <div className="d-flex justify-content-md-end">
-                        <div className="p-2">
-                            <h4>SzámlaID:</h4>
+            <div className="col-lg-12">
+            <div className="InvoiceAddForm">
+                <h3 className="text-center SzamlaCim">Számla létrehozása és listázása</h3>
+                <div className="row">
+                    <div className="col">
+                <div className="table-responsive">
+                    <ErrorMessageWell/>
+                    <table className="table SzamlaTablazat">
+                        <tbody>
+                        <tr className="Nev">
+                            <td>Számla ID:</td>
+                            <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.InvoiceID}
@@ -39,9 +45,12 @@ class InvoiceAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>VendégID:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Vendég ID:</td>
+                            <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.GuestID}
@@ -51,21 +60,13 @@ class InvoiceAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>Ár:</h4>
-                            <input className={"form-control myinput"}
-                                   type={"text"}
-                                   value={this.state.Price}
-                                   onChange={(e) => {
-                                       let st = this.state;
-                                       st.Price = e.target.value;
-                                       this.setState(st);
-                                   }}
-                            />
-                        </div>
-                        <div className="p-2">
-                            <h4>Fizetés:</h4>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fizetés:</td>
+                            <td>
+
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.PaymentMethod}
@@ -75,9 +76,12 @@ class InvoiceAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>FoglalásID:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Foglalás ID:</td>
+                            <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.ReserveID}
@@ -87,21 +91,33 @@ class InvoiceAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <br/><br/><br/><br/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                colSpan={2}>
                             <button type={"submit"}
-                                    className="btn btn-info"
+                                    className="btn btn-info InvoiceBtn"
                                     onClick={() => {
                                         actions.recordInvoice(this.state);
                                     }}
                             >Létrehoz
                             </button>
-                        </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                </div>
                     </div>
-                </form>
+                    <div className="SzamlaListazas col">
+                        <InvoiceList/>
+                    </div>
+                </div>
+            </div>
             </div>
         );
     }
 }
-export default  InvoiceAddForm;
+export default InvoiceAddForm;
