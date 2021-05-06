@@ -11,6 +11,7 @@ class InvoiceAddForm extends React.Component {
         this.state = {
             InvoiceID: '0',
             GuestID: '0',
+            Price: '0',
             PaymentMethod: "készpénz",
             ReserveID: '0'
         };
@@ -59,11 +60,13 @@ class InvoiceAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
+
                             </td>
                         </tr>
                         <tr>
                             <td>Fizetés:</td>
                             <td>
+
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.PaymentMethod}

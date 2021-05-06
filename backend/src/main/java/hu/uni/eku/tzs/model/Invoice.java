@@ -12,6 +12,7 @@ public class Invoice
 {
     private Integer invoiceId;
     private Integer guestId;
+    private Integer price;
     private String paymentMethod;
     private Integer reserveId;
 }
