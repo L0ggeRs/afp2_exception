@@ -3,10 +3,10 @@ package hu.uni.eku.tzs.dao.entity;
 import hu.uni.eku.tzs.controller.dto.RecordGuestRequest;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @AllArgsConstructor
 @Builder

@@ -1,5 +1,6 @@
 package hu.uni.eku.tzs.controller.dto;
 
+import hu.uni.eku.tzs.dao.entity.Guest;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
