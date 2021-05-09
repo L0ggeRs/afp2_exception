@@ -1,9 +1,6 @@
 package hu.uni.eku.tzs.service;
 
-import hu.uni.eku.tzs.dao.InvoiceDao;
-import hu.uni.eku.tzs.model.Invoice;
 import hu.uni.eku.tzs.service.exceptions.InvoiceAlreadyExistsException;
-import io.swagger.models.auth.In;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

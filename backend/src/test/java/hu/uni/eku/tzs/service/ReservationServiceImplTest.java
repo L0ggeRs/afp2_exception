@@ -1,7 +1,5 @@
 package hu.uni.eku.tzs.service;
 
-import hu.uni.eku.tzs.dao.ReservationDao;
-import hu.uni.eku.tzs.model.Reservation;
 import hu.uni.eku.tzs.service.exceptions.ReservationAlreadyExistsException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

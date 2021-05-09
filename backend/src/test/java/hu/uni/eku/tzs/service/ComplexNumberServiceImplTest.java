@@ -1,7 +1,5 @@
 package hu.uni.eku.tzs.service;
 
-import hu.uni.eku.tzs.dao.ComplexNumberDao;
-import hu.uni.eku.tzs.model.ComplexNumber;
 import hu.uni.eku.tzs.service.exceptions.ComplexNumberAlreadyExistsException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
