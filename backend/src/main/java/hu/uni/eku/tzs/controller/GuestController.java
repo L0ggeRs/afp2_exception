@@ -35,7 +35,7 @@ public class GuestController {
         return guestService.getGuest();
     }
 
-    @DeleteMapping(value = {"/delete{guestId}"})
+    @DeleteMapping(value = {"/deleteGuest{guestId}"})
     @ApiOperation(value = "Delete a Guest")
     public void delete(@PathVariable Integer guestId)
     {

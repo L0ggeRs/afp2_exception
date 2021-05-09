@@ -8,6 +8,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.lang.NonNull;
 
+import java.time.LocalDate;
+
 
 @Data
 @Builder
@@ -34,4 +36,12 @@ public class RecordReservationRequest {
     @NonNull
     @ApiModelProperty(required = true, example = "1500")
     private Integer price;
+
+    @NonNull
+    @ApiModelProperty(required = true, example = "2019-02-24")
+    private LocalDate reserve_start;
+
+    @NonNull
+    @ApiModelProperty(required = true, example = "2019-03-01")
+    private LocalDate reserve_end;
 }

@@ -8,6 +8,5 @@ public interface ReservationRepository extends JpaRepository<Reservation,Integer
 
     Reservation getReservationById(Integer reservationId);
 
-    Reservation getReservationByCamp_id(Integer campId);
 
 }

@@ -5,6 +5,7 @@ import hu.uni.eku.tzs.controller.dto.RecordReservationRequest;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @AllArgsConstructor
 @Builder
@@ -33,6 +34,12 @@ public class Reservation {
     @Column
     private Integer price;
 
+    @Column
+    private LocalDate reserve_start;
+
+    @Column
+    private LocalDate reserve_end;
+
 
     public static Reservation createReservation(RecordReservationRequest request) {
         return new Reservation(
@@ -41,12 +48,14 @@ public class Reservation {
                 request.getCamp_id(),
                 request.getCamping_style(),
                 request.getElectricity(),
-                request.getPrice()
+                request.getPrice(),
+                request.getReserve_start(),
+                request.getReserve_end()
         );
     }
 
     public Reservation toReservationRequest() {
-        return new Reservation(id, guest_id, camp_id, camping_style, electricity, price);
+        return new Reservation(id, guest_id, camp_id, camping_style, electricity, price, reserve_start, reserve_end);
     }
 
 }
