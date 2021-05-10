@@ -1,6 +1,9 @@
 import React from "react";
 import ErrorMessageWell from "../ErrorMessageWell";
 import * as actions from "../../action/ReservationAction";
+import "./ReservationAddForm.css";
+import ReservationList from "../ReservationList";
+
 
 
 class ReservationAddForm extends React.Component {
@@ -49,14 +52,16 @@ class ReservationAddForm extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="ReservationAddForm">
+                <h3 className="text-center ReserveCim">Foglalások létrehozása és listázása</h3>
+                <div className="table-responsive">
                 <ErrorMessageWell/>
-                <h2>Foglalás létrehozása</h2>
-                <hr/>
-                <form className="myform">
-                    <div className="d-flex justify-content-md-end">
-                        <div className="p-2">
-                            <h4>FoglalásID:</h4>
+                    <table className="table ReserveTablazat">
+                        <tbody>
+
+                        <tr>
+                            <td>Foglalás ID:</td>
+                            <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.ReserveID}
@@ -66,9 +71,12 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>VendégID:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Vendég ID:</td>
+                            <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.GuestID}
@@ -78,9 +86,12 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>CampID:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Camp ID:</td>
+                        <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.CampID}
@@ -90,9 +101,12 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>Típus:</h4>
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td>Típus:</td>
+                        <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    list={"type"}
@@ -107,10 +121,12 @@ class ReservationAddForm extends React.Component {
                                 <option value={"Karaván"} id={"1"}></option>
                                 <option value={"Sátor"} id={"0"}></option>
                             </datalist>
+                        </td>
+                        </tr>
 
-                        </div>
-                        <div className="p-2">
-                            <h4>Áram:</h4>
+                        <tr>
+                            <td>Áram:</td>
+                        <td>
                             <input className={"form-control myinput"} type="checkbox"
                                    value={this.state.Electricity}
                                    onChange={(e) => {
@@ -119,9 +135,12 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                        <h4>Ár:</h4>
+                        </td>
+                        </tr>
+
+                        <tr>
+                            <td>Ár:</td>
+                            <td>
                         <input className={"form-control myinput"} type={"string"}
                                value={this.state.Price}
                                onChange={(e) => {
@@ -130,9 +149,12 @@ class ReservationAddForm extends React.Component {
                                    this.setState(st);
                                }}
                         />
-                        </div>
-                        <div className="p-2">
-                            <h4>Foglalás kezdete:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Foglalás kezdete:</td>
+                            <td>
                             <input className={"form-control myinput"} type={"string"}
                                    value={this.state.ReservationStart}
                                    onChange={(e) => {
@@ -141,9 +163,12 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>Foglalás vége:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Foglalás vége:</td>
+                            <td>
                             <input className={"form-control myinput"} type={"string"}
                                    value={this.state.ReservationEnd}
                                    onChange={(e) => {
@@ -152,11 +177,14 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <br/><br/><br/><br/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                colSpan={2}>
                             <button type={"submit"}
-                                    className="btn btn-info"
+                                    className="btn btn-info ReserveBtn"
                                     onClick={() => {
                                         this.whichType(this.state.camping_style);
                                         this.IsPrice(this.state.Price);
@@ -168,9 +196,15 @@ class ReservationAddForm extends React.Component {
                                     }}
                             >Létrehoz
                             </button>
-                        </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div className="ReserveList">
+                <ReservationList></ReservationList>
                     </div>
-                </form>
+            </div>
             </div>
         );
     }

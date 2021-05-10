@@ -34,7 +34,7 @@ class InvoiceList extends React.Component{
                             <td>Ár</td>
                             <td>Fizetés</td>
                             <td>FoglalásID</td>
-                            <td> <button className="btn btn-info" onClick={()=> actions.fetchInvoices(this.state)}>Listáz</button> </td>
+                            <td> <button className="btn btn-info InvoiceBtn" onClick={()=> actions.fetchInvoices(this.state)}>Listáz</button> </td>
                         </tr>
                         </thead>
                         <tbody>

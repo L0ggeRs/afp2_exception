@@ -37,7 +37,7 @@ class ReservationList extends React.Component{
                             <td>Ár</td>
                             <td>Foglalás kezdete</td>
                             <td>Foglalás vége</td>
-                            <td> <button className="btn btn-info" onClick={()=> actions.fetchReservations(this.state)}>Listáz</button> </td>
+                            <td> <button className="btn btn-info ReserveBtn" onClick={()=> actions.fetchReservations(this.state)}>Listáz</button> </td>
                         </tr>
                         </thead>
                         <tbody>
