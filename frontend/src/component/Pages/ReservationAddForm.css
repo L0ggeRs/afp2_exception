@@ -1,0 +1,45 @@
+.ReservationAddForm{
+    background: radial-gradient(farthest-side at 40px 40px,#ffe4c4 0%, #ffbb6a 100%);
+}
+
+.ReserveCim{
+    font-family: "Berlin Sans FB";
+    font-size: 60px;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.ReserveTablazat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e9ba23;
+    font-size: 20px;
+    background-color: bisque;
+    width:50%;
+    margin-left: 350px;
+}
+
+.ReserveBtn{
+    width: 100%;
+    background-color: darkgreen;
+}
+
+.ReserveBtn:hover{
+    background-color: coral;
+}
+
+.ReservationAddForm{
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: repeat;
+}
+
+.ReserveList{
+    margin-right: 200px;
+    margin-left: 200px;
+    border-top: 3px solid #e9ba23;
+    font-size: 20px;
+    width: 70%;
+    background-color: bisque;
+}
