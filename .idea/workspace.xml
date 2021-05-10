@@ -4,49 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="510dfeef-c7f3-45f5-aa8d-be72bf306c8a" name="Default Changelist" comment="Reservation electricity change to boolean">
-      <change afterPath="$PROJECT_DIR$/frontend/src/component/Pages/ReservationAddForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/action/ComplexNumberActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/ComplexNumberActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/action/GuestAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/GuestAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/action/InvoiceAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/InvoiceAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/action/ReservationAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/ReservationAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/action/__tests__/ComplexNumberAction.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/__tests__/ComplexNumberAction.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ComplexNumberList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ComplexNumberList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ComplexNumberListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ComplexNumberListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ComplexNumberRecordingForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ComplexNumberRecordingForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ErrorMessageWell.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ErrorMessageWell.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/GuestList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/GuestList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/GuestListitem.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/GuestListitem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/InvoiceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/InvoiceList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/InvoiceListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/InvoiceListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/GuestAddForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/GuestAddForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/GuestAddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/GuestAddForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Hero/HeroElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Hero/HeroElements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Hero/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Hero/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/ImageSlider/ImageSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/ImageSlider/ImageSlider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/ImageSlider/SliderData.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/ImageSlider/SliderData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/InvoiceAddForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/InvoiceAddForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/InvoiceAddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/InvoiceAddForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/MenuItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/MenuItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Pictures.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Pictures.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Pictures.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Pictures.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/ReservationAddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/ReservationAddForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ReservationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ReservationList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/component/ReservationListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ReservationListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/ComplexNumberActionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/ComplexNumberActionConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/Dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/Dispatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/GuestActionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/GuestActionConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/InvoiceActionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/InvoiceActionConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/ReservationActionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/ReservationActionConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ComplexNumberStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ComplexNumberStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ErrorMessageStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ErrorMessageStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/GuestStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/GuestStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/InvoiceStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/InvoiceStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ReservationStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ReservationStore.js" afterDir="false" />
-    </list>
+    <list default="true" id="510dfeef-c7f3-45f5-aa8d-be72bf306c8a" name="Default Changelist" comment=" odified frontend to fit Backend_Reform" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +85,7 @@
       <workItem from="1620564193816" duration="6000" />
       <workItem from="1620564211160" duration="2000" />
       <workItem from="1620680862535" duration="1070000" />
-      <workItem from="1620687614939" duration="382000" />
+      <workItem from="1620687614939" duration="1079000" />
     </task>
     <task id="LOCAL-00001" summary="Reservation electricity change to boolean">
       <created>1620687665371</created>
@@ -136,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620687665371</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" odified frontend to fit Backend_Reform">
+      <created>1620688171628</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620688171628</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +122,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Reservation electricity change to boolean" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reservation electricity change to boolean" />
+    <MESSAGE value=" odified frontend to fit Backend_Reform" />
+    <option name="LAST_COMMIT_MESSAGE" value=" odified frontend to fit Backend_Reform" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
