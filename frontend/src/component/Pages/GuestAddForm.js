@@ -103,8 +103,7 @@ class GuestAddForm extends React.Component {
                 <br/>
 
             </div>
-
-    );
+        );
     }
-    }
-    export default  GuestAddForm;
+}
+export default  GuestAddForm;
