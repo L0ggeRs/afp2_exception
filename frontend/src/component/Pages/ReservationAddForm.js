@@ -1,17 +1,19 @@
 import React from "react";
 import ErrorMessageWell from "../ErrorMessageWell";
 import * as actions from "../../action/ReservationAction";
+import "./ReservationAddForm.css";
+import ReservationList from "../ReservationList";
+
 
 
 class ReservationAddForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ReserveID: '0',
             GuestID: '0',
             CampID: '0',
             CampingStyle: '0',
-            Electricity : true,
+            Electricity : '0',
             Price : '0',
             ReservationStart : "2000-01-01",
             ReservationEnd : "2000-01-02"
@@ -34,7 +36,7 @@ class ReservationAddForm extends React.Component {
 
     }
     IsPrice(n){
-        if (n<0) {alert("Minuszt nem lehet megadni")}
+        if (n<0) {alert("Mínuszt nem lehet megadni")}
         else if (!this.isNumber(n)) {alert("Hibás Ár\nNem számot adott meg");}
         else {
             let st = this.state;
@@ -49,26 +51,16 @@ class ReservationAddForm extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className="ReservationAddForm">
+                <h3 className="text-center ReserveCim">Foglalások létrehozása és listázása</h3>
+                <div className="table-responsive">
                 <ErrorMessageWell/>
-                <h2>Foglalás létrehozása</h2>
-                <hr/>
-                <form className="myform">
-                    <div className="d-flex justify-content-md-end">
-                        <div className="p-2">
-                            <h4>FoglalásID:</h4>
-                            <input className={"form-control myinput"}
-                                   type={"text"}
-                                   value={this.state.ReserveID}
-                                   onChange={(e) => {
-                                       let st = this.state;
-                                       st.ReserveID = e.target.value;
-                                       this.setState(st);
-                                   }}
-                            />
-                        </div>
-                        <div className="p-2">
-                            <h4>VendégID:</h4>
+                    <table className="table ReserveTablazat">
+                        <tbody>
+
+                        <tr>
+                            <td>Vendég ID:</td>
+                            <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.GuestID}
@@ -78,9 +70,12 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>CampID:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Camp ID:</td>
+                            <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    value={this.state.CampID}
@@ -90,16 +85,18 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>Típus:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Típus:</td>
+                            <td>
                             <input className={"form-control myinput"}
                                    type={"text"}
                                    list={"type"}
                                    onChange={(e) => {
-
                                        let st = this.state;
-                                       st.camping_style = e.target.value;
+                                       st.CampingStyle = e.target.value;
                                        this.setState(st);
                                    }}
                             />
@@ -107,11 +104,13 @@ class ReservationAddForm extends React.Component {
                                 <option value={"Karaván"} id={"1"}></option>
                                 <option value={"Sátor"} id={"0"}></option>
                             </datalist>
+                            </td>
+                        </tr>
 
-                        </div>
-                        <div className="p-2">
-                            <h4>Áram:</h4>
-                            <input className={"form-control myinput"} type="checkbox"
+                        <tr>
+                            <td>Áram:</td>
+                            <td>
+                            <input className={"form-control myinput"} type={"checkbox"}
                                    value={this.state.Electricity}
                                    onChange={(e) => {
                                        let st = this.state;
@@ -119,20 +118,26 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                        <h4>Ár:</h4>
-                        <input className={"form-control myinput"} type={"string"}
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Ár:</td>
+                            <td>
+                            <input className={"form-control myinput"} type={"text"}
                                value={this.state.Price}
                                onChange={(e) => {
                                    let st = this.state;
                                    st.Price = e.target.value;
                                    this.setState(st);
                                }}
-                        />
-                        </div>
-                        <div className="p-2">
-                            <h4>Foglalás kezdete:</h4>
+                            />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Foglalás kezdete:</td>
+                            <td>
                             <input className={"form-control myinput"} type={"string"}
                                    value={this.state.ReservationStart}
                                    onChange={(e) => {
@@ -141,9 +146,12 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <h4>Foglalás vége:</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Foglalás vége:</td>
+                            <td>
                             <input className={"form-control myinput"} type={"string"}
                                    value={this.state.ReservationEnd}
                                    onChange={(e) => {
@@ -152,25 +160,34 @@ class ReservationAddForm extends React.Component {
                                        this.setState(st);
                                    }}
                             />
-                        </div>
-                        <div className="p-2">
-                            <br/><br/><br/><br/>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                colSpan={2}>
                             <button type={"submit"}
-                                    className="btn btn-info"
+                                    className="btn btn-info ReserveBtn"
                                     onClick={() => {
-                                        this.whichType(this.state.camping_style);
+                                        this.whichType(this.state.CampingStyle);
                                         this.IsPrice(this.state.Price);
-                                        if (!this.isNumber(this.state.ReserveID)) {alert("A Foglalás ID hibás\nCsak számot lehet megadni");                                        }
-                                        else if (!this.isNumber(this.state.GuestID)) {alert("A vendég id nem megfelő");}
-                                        else if (!this.isNumber(this.state.CampID)) {alert("A cmaping id nem megfelő");}
-                                        else if (this.state.camping_style === '') {alert("Választani kell tipust !")}
+                                        /*if (!this.isNumber(this.state.ReserveID)) {alert("A Foglalás ID hibás\nCsak számot lehet megadni");}*/
+                                        if (!this.isNumber(this.state.GuestID)) {alert("A vendég id nem megfelelő");}
+                                        else if (!this.isNumber(this.state.CampID)) {alert("A camping id nem megfelelő");}
+                                        else if (this.state.CampingStyle === '') {alert("Választani kell típust!")}
                                         else{actions.recordReservations(this.state);}
                                     }}
                             >Létrehoz
                             </button>
-                        </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div className="ReserveList">
+                <ReservationList></ReservationList>
                     </div>
-                </form>
+            </div>
             </div>
         );
     }

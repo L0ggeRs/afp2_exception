@@ -1,47 +1,45 @@
-.GuestAddForm{
+.ReservationAddForm{
     background: radial-gradient(farthest-side at 40px 40px,#ffe4c4 0%, #ffbb6a 100%);
 }
 
-.GuestCim{
+.ReserveCim{
     font-family: "Berlin Sans FB";
     font-size: 60px;
     margin-bottom: 1rem;
     letter-spacing: 3px;
-    color: bisque;
 }
 
-.GuestTablazat{
+.ReserveTablazat{
     display: flex;
     justify-content: center;
     align-items: center;
     border: 3px solid #e9ba23;
     font-size: 20px;
-    background: radial-gradient(farthest-side at 40px 40px,#ffe4c4 0%, #ffbb6a 100%);
+    background-color: bisque;
     width:50%;
     margin-left: 350px;
 }
 
-.Guestbtn{
+.ReserveBtn{
     width: 100%;
     background-color: darkgreen;
 }
 
-.VendegListazas{
-    margin-right: 200px;
-    margin-left: 200px;
-    border: 3px solid #e9ba23;
-    font-size: 20px;
-    background: radial-gradient(farthest-side at 40px 40px,#ffe4c4 0%, #ffbb6a 100%);
-    width: 70%;
-}
-
-.Guestbtn:hover{
+.ReserveBtn:hover{
     background-color: coral;
 }
 
-.GuestAddForm{
-    background-image: url('ImageSlider/campingbg2.jpg');
+.ReservationAddForm{
     background-attachment: fixed;
     background-size: 100% 100%;
     background-repeat: repeat;
+}
+
+.ReserveList{
+    margin-right: 200px;
+    margin-left: 200px;
+    border-top: 3px solid #e9ba23;
+    font-size: 20px;
+    width: 70%;
+    background-color: bisque;
 }

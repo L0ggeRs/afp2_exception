@@ -2,14 +2,12 @@ import axios from 'axios';
 import dispatcher from '../dispatcher/Dispatcher';
 import * as actionConstants from '../dispatcher/InvoiceActionConstants';
 
-export const recordInvoice = ({InvoiceID,GuestID,Price,PaymentMethod,ReserveID}) =>{
+export const recordInvoice = ({GuestID,PaymentMethod,ReserveID}) =>{
     axios.post('/invoice/record',
         {
-            invoiceId : InvoiceID,
-            guestId : GuestID,
-            price: Price,
-            paymentMethod: PaymentMethod,
-            reserveId : ReserveID
+            guest_id : GuestID,
+            payment_method: PaymentMethod,
+            reserve_id : ReserveID
         })
         .then(() => {
             fetchInvoices();
@@ -26,7 +24,7 @@ export const recordInvoice = ({InvoiceID,GuestID,Price,PaymentMethod,ReserveID})
 
 export const fetchInvoices = () =>{
 
-    axios.get('/invoice/').then((resp)=>{
+    axios.get('/invoices').then((resp)=>{
         dispatcher.dispatch({
             action : actionConstants.refresh,
             payload: resp.data
@@ -35,7 +33,7 @@ export const fetchInvoices = () =>{
 };
 export const DeleteInvoices = (id) =>{
 
-    axios.delete('/invoice/'+id).then(() => {
+    axios.delete('/deleteInvoice'+id).then(() => {
         fetchInvoices();
         dispatcher.dispatch({action : actionConstants.deleteError});
     })

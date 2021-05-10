@@ -9,9 +9,7 @@ class InvoiceAddForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            InvoiceID: '0',
             GuestID: '0',
-            Price: '0',
             PaymentMethod: "készpénz",
             ReserveID: '0'
         };
@@ -33,21 +31,6 @@ class InvoiceAddForm extends React.Component {
                     <ErrorMessageWell/>
                     <table className="table SzamlaTablazat">
                         <tbody>
-                        <tr className="Nev">
-                            <td>Számla ID:</td>
-                            <td>
-                            <input className={"form-control myinput"}
-                                   type={"text"}
-                                   value={this.state.InvoiceID}
-                                   onChange={(e) => {
-                                       let st = this.state;
-                                       st.InvoiceID = e.target.value;
-                                       this.setState(st);
-                                   }}
-                            />
-                            </td>
-                        </tr>
-
                         <tr>
                             <td>Vendég ID:</td>
                             <td>
@@ -97,13 +80,13 @@ class InvoiceAddForm extends React.Component {
                         <tr>
                             <td
                                 colSpan={2}>
-                            <button type={"submit"}
+                                <button type={"submit"}
                                     className="btn btn-info InvoiceBtn"
                                     onClick={() => {
                                         actions.recordInvoice(this.state);
                                     }}
-                            >Létrehoz
-                            </button>
+                                >Létrehoz
+                                </button>
                             </td>
                         </tr>
                         </tbody>

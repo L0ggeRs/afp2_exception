@@ -51,22 +51,6 @@ class GuestAddForm extends React.Component {
                         </tr>
 
                         <tr>
-                            <td>ID:</td>
-                            <td>
-                                <input className={"form-control myinput"}
-                                       type={"text"}
-                                       value={this.state.GuestID}
-                                       onChange={(e) => {
-                                                  if (this.isNumber(e.target.value) == -2){
-                                                      alert('Hiba az ID megadásánál.\n Csak számot lehet megadni.',)
-                                                  }
-                                                }
-                                       }
-                                />
-                            </td>
-                        </tr>
-
-                        <tr>
                             <td>Email cím:</td>
                             <td>
                                 <input className={"form-control myinput"}

@@ -2,12 +2,11 @@ import axios from 'axios';
 import dispatcher from '../dispatcher/Dispatcher';
 import * as actionConstants from '../dispatcher/ReservationActionConstants';
 
-export const recordReservations = ({ReserveID, GuestID, CampID, CampingStyle, Electricity, Price, ReservationStart, ReservationEnd}) =>{
+export const recordReservations = ({ GuestID, CampID, CampingStyle, Electricity, Price, ReservationStart, ReservationEnd}) =>{
     axios.post('/reservation/record',
         {
-            reservationId : ReserveID,
-            guestId : GuestID,
-            campId: CampID,
+            guest_id : GuestID,
+            camp_id: CampID,
             camping_style : CampingStyle,
             electricity : Electricity,
             price : Price,
@@ -29,7 +28,7 @@ export const recordReservations = ({ReserveID, GuestID, CampID, CampingStyle, El
 
 export const fetchReservations = () =>{
 
-    axios.get('/reservation/').then((resp)=>{
+    axios.get('/reservations/').then((resp)=>{
         dispatcher.dispatch({
             action : actionConstants.refresh,
             payload: resp.data
@@ -38,7 +37,7 @@ export const fetchReservations = () =>{
 };
 export const DeleteReservations = (id) =>{
 
-    axios.delete('/reservation/'+id).then(() => {
+    axios.delete('/deleteReservation'+id).then(() => {
         fetchReservations();
         dispatcher.dispatch({action : actionConstants.deleteError});
     })

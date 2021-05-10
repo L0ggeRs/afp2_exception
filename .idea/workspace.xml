@@ -4,11 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="510dfeef-c7f3-45f5-aa8d-be72bf306c8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/afp2_exception.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="510dfeef-c7f3-45f5-aa8d-be72bf306c8a" name="Default Changelist" comment="Reservation electricity change to boolean">
+      <change afterPath="$PROJECT_DIR$/frontend/src/component/Pages/ReservationAddForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/action/ComplexNumberActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/ComplexNumberActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/action/GuestAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/GuestAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/action/InvoiceAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/InvoiceAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/action/ReservationAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/ReservationAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/action/__tests__/ComplexNumberAction.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/action/__tests__/ComplexNumberAction.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/ComplexNumberList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ComplexNumberList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/ComplexNumberListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ComplexNumberListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/ComplexNumberRecordingForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ComplexNumberRecordingForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/ErrorMessageWell.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ErrorMessageWell.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/GuestList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/GuestList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/GuestListitem.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/GuestListitem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/InvoiceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/InvoiceList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/InvoiceListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/InvoiceListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/GuestAddForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/GuestAddForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/GuestAddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/GuestAddForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Hero/HeroElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Hero/HeroElements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Hero/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Hero/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/ImageSlider/ImageSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/ImageSlider/ImageSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/ImageSlider/SliderData.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/ImageSlider/SliderData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/InvoiceAddForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/InvoiceAddForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/InvoiceAddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/InvoiceAddForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/MenuItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/MenuItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Pictures.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Pictures.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/Pictures.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/Pictures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/Pages/ReservationAddForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/Pages/ReservationAddForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/ReservationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ReservationList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/component/ReservationListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/component/ReservationListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/ComplexNumberActionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/ComplexNumberActionConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/Dispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/Dispatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/GuestActionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/GuestActionConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/InvoiceActionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/InvoiceActionConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/dispatcher/ReservationActionConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/dispatcher/ReservationActionConstants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ComplexNumberStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ComplexNumberStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ErrorMessageStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ErrorMessageStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/GuestStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/GuestStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/InvoiceStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/InvoiceStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ReservationStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ReservationStore.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +56,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pWdRxP8on2AfrL7WqkRTuymxK2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -41,7 +81,7 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <extension name="coverage">
@@ -54,6 +94,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,7 +127,16 @@
       <workItem from="1620564193816" duration="6000" />
       <workItem from="1620564211160" duration="2000" />
       <workItem from="1620680862535" duration="1070000" />
+      <workItem from="1620687614939" duration="382000" />
     </task>
+    <task id="LOCAL-00001" summary="Reservation electricity change to boolean">
+      <created>1620687665371</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620687665371</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +153,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Reservation electricity change to boolean" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reservation electricity change to boolean" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

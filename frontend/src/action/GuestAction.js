@@ -2,11 +2,10 @@ import axios from 'axios';
 import dispatcher from '../dispatcher/Dispatcher';
 import * as actionConstants from '../dispatcher/GuestActionConstants';
 
-export const recordGuest = ({GuestName,GuestID,GuestEmail,GuestPhone}) =>{
+export const recordGuest = ({GuestName,GuestEmail,GuestPhone}) =>{
     axios.post('/guest/record',
         {
             name : GuestName,
-            guestId : GuestID,
             email: GuestEmail,
             phone : GuestPhone,
         })
@@ -25,7 +24,7 @@ export const recordGuest = ({GuestName,GuestID,GuestEmail,GuestPhone}) =>{
 
 export const fetchGuests = () =>{
 
-    axios.get('/guest/').then((resp)=>{
+    axios.get('/guests/').then((resp)=>{
         dispatcher.dispatch({
             action : actionConstants.refresh,
             payload: resp.data
@@ -34,7 +33,7 @@ export const fetchGuests = () =>{
 };
 export const DeleteGuests = (id) =>{
 
-    axios.delete('/guest/'+id).then(() => {
+    axios.delete('/deleteGuest'+id).then(() => {
         fetchGuests();
         dispatcher.dispatch({action : actionConstants.deleteError});
     })

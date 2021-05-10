@@ -32,7 +32,7 @@ class GuestList extends React.Component{
                     <table className="product_table table">
                         <thead>
                         <tr>
-                            <td>ID </td>
+                            <td>ID:</td>
                             <td>Név </td>
                             <td>Email cím </td>
                             <td>Telefonszám </td>
@@ -40,13 +40,14 @@ class GuestList extends React.Component{
                         </tr>
                         </thead>
                         <tbody>
-                        {this.state.guests.map(({id,guestId,name,email,phone})=>{
+                        {this.state.guests.map(({id,name,email,phone})=>{
                             return(
                                 <tr key={id}>
-                                    <td>{guestId}</td>
+                                    <td>{id}</td>
                                     <td>{name}</td>
                                     <td>{email}</td>
                                     <td>{phone}</td>
+                                    <td> <button className="btn btn-info Guestbtn" onClick={()=> actions.DeleteGuests(id)}>Töröl</button></td>
                                 </tr>
                             );
                         })}

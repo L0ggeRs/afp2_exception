@@ -1,8 +1,8 @@
 import React from 'react';
 
-function InvoiceListItem({InvoiceID, GuestID, Price, PaymentMethod, ReserveID}){
+function InvoiceListItem({InvoiceID, GuestID, PaymentMethod, ReserveID}){
     return(
-        <span>({InvoiceID}, {GuestID}, {Price}, {PaymentMethod}, {ReserveID})</span>
+        <span>({InvoiceID}, {GuestID}, {PaymentMethod}, {ReserveID})</span>
     );
 }
 export default InvoiceListItem;

@@ -37,21 +37,22 @@ class ReservationList extends React.Component{
                             <td>Ár</td>
                             <td>Foglalás kezdete</td>
                             <td>Foglalás vége</td>
-                            <td> <button className="btn btn-info" onClick={()=> actions.fetchReservations(this.state)}>Listáz</button> </td>
+                            <td> <button className="btn btn-info ReserveBtn" onClick={()=> actions.fetchReservations(this.state)}>Listáz</button> </td>
                         </tr>
                         </thead>
                         <tbody>
-                        {this.state.reservations.map(({reservationId, guestId, campId, camping_style, electricity, price, reserve_start, reserve_end})=>{
+                        {this.state.reservations.map(({id, guest_id, camp_id, camping_style, electricity, price, reserve_start, reserve_end})=>{
                             return(
-                                <tr key={reservationId}>
-                                    <td>{reservationId}</td>
-                                    <td>{guestId}</td>
-                                    <td>{campId}</td>
+                                <tr key={id}>
+                                    <td>{id}</td>
+                                    <td>{guest_id}</td>
+                                    <td>{camp_id}</td>
                                     <td>{camping_style}</td>
-                                    <td>{electricity}</td>
+                                    <td>{electricity.toString()}</td>
                                     <td>{price}</td>
                                     <td>{reserve_start}</td>
                                     <td>{reserve_end}</td>
+                                    <td> <button className="btn btn-info ReserveBtn" onClick={()=> actions.DeleteReservations(id)}>Töröl</button></td>
                                 </tr>
                             );
                         })}
