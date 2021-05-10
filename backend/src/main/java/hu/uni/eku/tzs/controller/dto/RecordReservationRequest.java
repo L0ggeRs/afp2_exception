@@ -29,8 +29,8 @@ public class RecordReservationRequest {
     private Integer camping_style;
 
     @NonNull
-    @ApiModelProperty(required = true, example = "1")
-    private Integer electricity;
+    @ApiModelProperty(required = true, example = "true")
+    private Boolean electricity;
 
     @NonNull
     @ApiModelProperty(required = true, example = "1500")

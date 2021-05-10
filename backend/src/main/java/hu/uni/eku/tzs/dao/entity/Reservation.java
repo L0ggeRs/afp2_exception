@@ -29,7 +29,7 @@ public class Reservation {
     private Integer camping_style;
 
     @Column
-    private Integer electricity;
+    private Boolean electricity;
 
     @Column
     private Integer price;
