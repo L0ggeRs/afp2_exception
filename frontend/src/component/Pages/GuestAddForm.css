@@ -1,3 +1,7 @@
+.GuestAddForm{
+    background: radial-gradient(farthest-side at 40px 40px,#ffe4c4 0%, #ffbb6a 100%);
+}
+
 .GuestCim{
     font-family: "Berlin Sans FB";
     font-size: 60px;
