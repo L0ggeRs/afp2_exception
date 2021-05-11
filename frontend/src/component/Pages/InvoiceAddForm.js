@@ -15,7 +15,11 @@ class InvoiceAddForm extends React.Component {
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
+    isNumber(n){
+        const re = /^[0-9\b]+$/;
+        return re.test(n)
 
+    }
     formOnChange(event) {
         const {name, value} = event.target;
         this.setState({[name]: value});
