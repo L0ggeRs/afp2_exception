@@ -1,5 +1,4 @@
-|T3|2021.01.15 12:19|Férőhelyek lekérdezése|A férőhelyek lekérdezése formban való intervallum kitöltése majd eze kadatok alapján megjelenítése| A webes felületen való térkép pirossal a lefoglalt illetve zölddel a még szabad helyek megjelenítése.| A térképen megjelenek a megfelelő színnel a megfelelő helyen a megfelelő időpont között a férőhelyek.
- ## Szélsőérték funkcionális  teszt
-  | Sorszám |Dátum| Funkció leírása| Vizsgálat módja/eszköze, részletes leírása | Elvárt eredmény| Eredmény
-|--|--|--|--|--|--|
-|T1|2021.01.15 12:28| Férőhelyek lekérdezése | A webes felületen próbálunk kézzel beleírni a form inputba| kézzel ne lehessen beleírni a form inputba| Nem tudunk bele írni a form inputba. Tehát működik
+| Sorszám |Név | Dátum| Funkció leírása| Vizsgálat módja/eszköze, részletes leírása | Elvárt eredmény| Eredmény |Verzió |
+|--|--|--|--|--|--|--|--|
+|T1|Guti Adrián|2021.05.08 11:58 |Vendég felvétele adatbázisba|A vendég létrehozás formba felvettük az adatokat. Az adatbázist intelij-ben kérdeztük le.|Adatbázisban való megjelenés|   Az ID-t automatikus generálja. email és név adatait bekerültek az adatbázisba | Docker version 20.10.5 |
+|T2|2021.05.08 12:20|Foglalás|A webfelületen a foglalás formban kitöltjük az adatokat megfelelően Az adatbázist intelij-ben kérdeztük le.| Lefoglalás lefoglalódik a megfelelő idő intervallumra az adott opciókkal együtt.| A lefoglalt intervallumon sikeresen rögzítve lett a foglalás, és bele teszi a kilistázott foglalások közé.|Sikeresen megtörtént a művelet látszódik a felvett foglalás a listában| Docker version 20.10.5|
