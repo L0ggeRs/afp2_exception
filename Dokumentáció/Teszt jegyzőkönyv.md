@@ -6,6 +6,7 @@
 |T4|Ungi Keve|2021.05.09 13:00|Foglalás|Az új backendel is teszteltem a foglalás felvitelét.| Sikeresen tudok foglalni a megfelelő paraméterekkel.| A lefoglalt intervallumon sikeresen rögzítve lett a foglalás, a foglalás megjelenik a listázott foglalások között. Sikeresen megtörtént a művelet látszódik a felvett foglalás a listában| Docker version 20.10.6|
 |T5|Karaba Márk|2021.05.09 13:14|Vendég felvétele|A webfelületen a vendég formban kitöltjük az adatokat megfelelően.| A vendég bekerül az adatbázisba a saját adataival együtt.|Sikeresen rögzítve lett a vendég, és beleteszi a vendégek közé, a művelet látszódik a felvett vendég a listában.| Docker version 20.10.5|
 |T6|Guti Adrián|2021.05.09 13:20|Számla felvétele | A számla formon megpróbálok felvenni egy számlát az adatbázisba megfelelő értékekkel| A számla siekresen beleíródik az adatbázisba és a kilistázódik.|  A számla kilistázódott a menüpontban |Docker version 20.10.5 |
-Szélsőérték funkcionális teszt
+|T7|Karaba Márk|2021.05.09 13:35|Vendégek listázása|A webfelületen a vendég formban a listáz gomb segítségével megjelenítjük az adatokat. | A vendégek adatait lekéri az adatbázisból és megjeleníti őket.|Sikeresen ki lett listázva, megörtént a művelet, látszódik a kilistázott vendég adatbázis.| Docker version 20.10.5|
+# Szélsőérték funkcionális teszt
 | Sorszám |Név | Dátum| Funkció leírása| Vizsgálat módja/eszköze, részletes leírása | Elvárt eredmény| Eredmény |Verzió |
 |--|--|--|--|--|--|--|--|
