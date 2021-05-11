@@ -20,6 +20,13 @@ class GuestAddForm extends React.Component {
             const re = /^[0-9\b]+$/;
             return re.test(n)
         }
+    checkPhone(Phone){
+        const re1 = /^[0-9\b]+$/;
+        const re2 = /^\d{10}$/;
+
+        return re1.test(Phone)&&re2.test(Phone)
+    }
+
     formOnChange(event) {
         const {name, value} = event.target;
         this.setState({[name]: value});
@@ -82,7 +89,7 @@ class GuestAddForm extends React.Component {
                                 <button type={"submit"}
                                         className="btn btn-info Guestbtn"
                                         onClick={() => {
-                                            if (!this.isNumber(this.state.GuestPhone)) {alert("Hibás telefonszám")}
+                                            if (!this.checkPhone(this.state.GuestPhone)) {alert("Hibás telefonszám")}
                                             else {
                                                 actions.recordGuest(this.state);
                                             }
