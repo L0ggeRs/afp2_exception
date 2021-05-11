@@ -10,19 +10,28 @@ class GuestAddForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            GuestName : "Nev",
+            GuestEmail: "email cím",
+            GuestPhone: "telefonszám",
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
-        isNumber(n){
+    checkEmail(email){
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    isNumber(n){
             const re = /^[0-9\b]+$/;
-            if (n === '' || re.test(n)) {
-                let st = this.state;
-                st.GuestID = n;
-                this.setState({value: st })
-                return -1
-            }
-            return -2
+            return re.test(n)
         }
+    checkPhone(Phone){
+        const re1 = /^[0-9\b]+$/;
+        const re2 = /^\d{10}$/;
+
+        return re1.test(Phone)&&re2.test(Phone)
+    }
+
     formOnChange(event) {
         const {name, value} = event.target;
         this.setState({[name]: value});
@@ -71,11 +80,9 @@ class GuestAddForm extends React.Component {
                                 <input className={"form-control myinput"} type={"string"}
                                        value={this.state.GuestPhone}
                                        onChange={(e) => {
-                                           if(this.isNumber(e.target.value)){
                                                let st = this.state;
                                                st.GuestPhone = e.target.value;
                                                this.setState(st);
-                                           }
                                        }}
                                 />
                             </td>
@@ -87,7 +94,11 @@ class GuestAddForm extends React.Component {
                                 <button type={"submit"}
                                         className="btn btn-info Guestbtn"
                                         onClick={() => {
-                                            actions.recordGuest(this.state);
+                                            if (!this.checkPhone(this.state.GuestPhone)) {alert("Hibás telefonszám")}
+                                            else if (!this.checkEmail(this.state.GuestEmail)) {alert("Hibás email cím formátum")}
+                                            else {
+                                                actions.recordGuest(this.state);
+                                            }
                                         }}
                                 >Létrehozás
                                 </button>
