@@ -27,7 +27,7 @@ class GuestAddForm extends React.Component {
         }
     checkPhone(Phone){
         const re1 = /^[0-9\b]+$/;
-        const re2 = /^\d{10}$/;
+        const re2 = /^\d{11}$/;
 
         return re1.test(Phone)&&re2.test(Phone)
     }
@@ -53,12 +53,11 @@ class GuestAddForm extends React.Component {
                                        onChange={(e) => {
                                            let st = this.state;
                                            st.GuestName = e.target.value;
-                                           this.state.setState(st);
+                                           this.setState(st);
                                        }}
                                 />
                             </td>
                         </tr>
-
                         <tr>
                             <td>Email cím:</td>
                             <td>
