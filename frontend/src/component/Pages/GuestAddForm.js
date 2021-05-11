@@ -10,18 +10,15 @@ class GuestAddForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            GuestName : "Nev",
+            GuestEmail: "email cím",
+            GuestPhone: "telefonszám",
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
         isNumber(n){
             const re = /^[0-9\b]+$/;
-            if (n === '' || re.test(n)) {
-                let st = this.state;
-                st.GuestID = n;
-                this.setState({value: st })
-                return -1
-            }
-            return -2
+            return re.test(n)
         }
     formOnChange(event) {
         const {name, value} = event.target;
@@ -71,11 +68,9 @@ class GuestAddForm extends React.Component {
                                 <input className={"form-control myinput"} type={"string"}
                                        value={this.state.GuestPhone}
                                        onChange={(e) => {
-                                           if(this.isNumber(e.target.value)){
                                                let st = this.state;
                                                st.GuestPhone = e.target.value;
                                                this.setState(st);
-                                           }
                                        }}
                                 />
                             </td>
@@ -87,7 +82,10 @@ class GuestAddForm extends React.Component {
                                 <button type={"submit"}
                                         className="btn btn-info Guestbtn"
                                         onClick={() => {
-                                            actions.recordGuest(this.state);
+                                            if (!this.isNumber(this.state.GuestPhone)) {alert("Hibás telefonszám")}
+                                            else {
+                                                actions.recordGuest(this.state);
+                                            }
                                         }}
                                 >Létrehozás
                                 </button>
