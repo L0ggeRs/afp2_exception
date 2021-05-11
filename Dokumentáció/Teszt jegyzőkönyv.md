@@ -12,3 +12,5 @@
 |--|--|--|--|--|--|--|--|
 |T1|Ungi Keve|2021.05.11 11:00 |VendégID és KampingID értékének ellenőrzése|Leellenőriztem, hogy ezen 2 értékhez csak számot lehet megadni.|Ha betűt adunk meg, akkor egy hibaüzenetet kell dobnia.| Hibás érték megadására azonnal hibaüznettel tér vissza a honlap.| node v14.15.5 |
 |T2|Ungi Keve|2021.05.11 11:15 |A kamping típusának ellenőrzése.|Leellenőriztem, hogy ezen értékhez csak azt a 2 értéket lehet megadni, hogy "karaván" és "sátor".|Bármilyen más érték megadásakor hibaüzenettel tér vissza a honlap.|Ellenőrzés sikeresen lezajlott, hibás érték esetén hibaüzenetet dob.| node v14.15.5 |
+|T3|Karaba Márk|2021.05.11. 12:10|Telefonszám bevitele|Telefonszám felvitele az adatbázisba, helytelen telefonszám formátummmal megadva|Hibaüzenet megjelenítése|Felugró hibaüzenet a hibás telefonszám formátum miatt.| Node version 12.16.2
+|T4|Karaba Márk|2021.05.11. 12:15|Email cím bevitele|Email cím felvitele az adatbázisba, helytelen email formátummmal megadva|Hibaüzenet megjelenítése|Felugró hibaüzenet a hibás email formátum miatt.| Node version 12.16.2
