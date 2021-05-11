@@ -20,6 +20,17 @@ class InvoiceAddForm extends React.Component {
         return re.test(n)
 
     }
+    IsPrice(n){
+        if (n<0) {alert("Mínuszt nem lehet megadni"); return false;}
+        else if (!this.isNumber(n)) {alert("Hibás Ár\nNem számot adott meg"); return false;}
+        else {
+            let st = this.state;
+            st.Price = n;
+            this.setState(st);
+
+        }
+        return true;
+    }
     formOnChange(event) {
         const {name, value} = event.target;
         this.setState({[name]: value});
@@ -87,7 +98,14 @@ class InvoiceAddForm extends React.Component {
                                 <button type={"submit"}
                                     className="btn btn-info InvoiceBtn"
                                     onClick={() => {
-                                        actions.recordInvoice(this.state);
+                                        if(!this.isNumber(this.state.GuestID))
+                                        {
+                                            alert("Hibás Vendég ID");
+                                        }
+                                        else if(!this.isNumber(this.state.ReserveID)){ alert("Hibás Foglalás ID")}
+                                        else {
+                                            actions.recordInvoice(this.state);
+                                        }
                                     }}
                                 >Létrehoz
                                 </button>
