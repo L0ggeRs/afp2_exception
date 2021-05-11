@@ -16,7 +16,12 @@ class GuestAddForm extends React.Component {
         };
         this.formOnChange = this.formOnChange.bind(this);
     }
-        isNumber(n){
+    checkEmail(email){
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    isNumber(n){
             const re = /^[0-9\b]+$/;
             return re.test(n)
         }
@@ -90,6 +95,7 @@ class GuestAddForm extends React.Component {
                                         className="btn btn-info Guestbtn"
                                         onClick={() => {
                                             if (!this.checkPhone(this.state.GuestPhone)) {alert("Hibás telefonszám")}
+                                            else if (!this.checkEmail(this.state.GuestEmail)) {alert("Hibás email cím formátum")}
                                             else {
                                                 actions.recordGuest(this.state);
                                             }
